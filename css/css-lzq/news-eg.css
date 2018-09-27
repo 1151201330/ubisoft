@@ -3,18 +3,29 @@
 .banner {
     height: 410px;
     vertical-align: middle;
-    background: url(../images/news_hero.jpg);
+    background: url(../../images/images-lzq/news_hero.jpg);
 }
 
 .circle {
-    /* margin-top: 50px;
-    margin-left: 150px; */
     width: 308px;
     height: 308px;
     border-radius: 50%;
     background: #4769b2;
     vertical-align: middle;
     color: #fff;
-    /* display: inline-block; */
 }
-@media and()
+
+
+/* 移动端，超小屏幕 */
+
+@media (max-width: 767px) {}
+
+
+/* 小屏幕（平板，大于等于 768px） */
+
+@media (min-width: 768px) {}
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+
+@media (min-width: 992px) {}
