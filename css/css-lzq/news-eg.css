@@ -1,0 +1,20 @@
+/* banner */
+
+.banner {
+    height: 410px;
+    vertical-align: middle;
+    background: url(../images/news_hero.jpg);
+}
+
+.circle {
+    /* margin-top: 50px;
+    margin-left: 150px; */
+    width: 308px;
+    height: 308px;
+    border-radius: 50%;
+    background: #4769b2;
+    vertical-align: middle;
+    color: #fff;
+    /* display: inline-block; */
+}
+@media and()
