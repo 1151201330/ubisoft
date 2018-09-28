@@ -34,11 +34,12 @@
             height: 50px;
             border: none;
             color: #666;
+            padding-left: 15px;
         }
         
         .type button:hover {
             /* background: #3f3f3f; */
-            background: rgba(19, 19, 19, 0.2);
+            background: rgba(19, 19, 19, 0.3);
             color: #fff;
         }
         
@@ -50,38 +51,42 @@
             position: relative;
         }
         
-        .drop {
+        .drop,
+        .drop2 {
             position: absolute;
-            top: 70px;
-            left: 15px;
             display: none;
+            margin-top: 5px;
         }
         
         .show {
             display: block;
         }
         
-        .drop ul {
-            width: 100%;
-        }
-        
-        .drop ul li {
-            width: 421.33px;
+        .drop ul li,
+        .drop2 ul li {
+            /* width: 100%; */
+            width: 414.33px;
             background: #222;
             height: 50px;
             border-bottom: 1px solid #666;
             line-height: 50px;
         }
         
-        .drop ul li a {
+        .drop ul li a,
+        .drop2 ul li a {
             display: block;
             padding-left: 15px;
             color: #666;
         }
         
-        .drop ul li a:hover {
+        .drop ul li a:hover,
+        .drop2 ul li a:hover {
             text-decoration: none;
             color: #fff;
+        }
+        
+        .active {
+            background: #3f3f3f;
         }
     </style>
 </head>
@@ -91,40 +96,67 @@
         <div class="box">
             <div class="row posison">
                 <div class="col-md-4 col col-xs-12">
-                    <button class="platform"> 平台分类：
+                    <button class="platform text-left"> 平台分类：
                     <span>  全部</span> 
                     <span class="caret"></span> 
                     </button>
+                    <div class="drop">
+                        <ul>
+                            <li><a class="active" href="#">全部</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">online</a></li>
+                            <li><a href="#">PC</a></li>
+                            <li><a href="#">Playstation4</a></li>
+                            <li><a href="#">Xbox One</a></li>
+                            <li><a href="#">Xbox 360</a></li>
+                            <li><a href="#">Playstation3</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">Playstation Vita</a></li>
+                            <li><a href="#">Wii U</a></li>
+                            <li><a href="#">Wii</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">windows phone</a></li>
+                            <li><a href="#">Virtual Reality Devices</a></li>
+                            <li><a href="#">Nintendo Switch</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="drop">
-                    <ul>
-                        <li><a class="active" href="#">全部</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">online</a></li>
-                        <li><a href="#">PC</a></li>
-                        <li><a href="#">Playstation4</a></li>
-                        <li><a href="#">Xbox One</a></li>
-                        <li><a href="#">Xbox 360</a></li>
-                        <li><a href="#">Playstation3</a></li>
-                        <li><a href="#">Mac</a></li>
-                        <li><a href="#">Playstation Vita</a></li>
-                        <li><a href="#">Wii U</a></li>
-                        <li><a href="#">Wii</a></li>
-                        <li><a href="#">iPad</a></li>
-                        <li><a href="#">iPhone</a></li>
-                        <li><a href="#">windows phone</a></li>
-                        <li><a href="#">Virtual Reality Devices</a></li>
-                        <li><a href="#">Nintendo Switch</a></li>
-                    </ul>
-                </div>
+
 
                 <div class="col-md-4 col col-xs-12">
-                    <button class="game"> 游戏类型：
-                    <span>  全部</span>  
+                    <button class="game text-left"> 游戏类型：
+                    <span>  全部</span> 
                     <span class="caret"></span> 
-
                     </button>
+                    <div class="drop2">
+                        <ul>
+                            <li class="active"><a href="#">全部</a></li>
+                            <li><a href="#">动作</a></li>
+                            <li><a href="#">冒险</a></li>
+                            <li><a href="#">街机</a></li>
+                            <li><a href="#">休闲</a></li>
+                            <li><a href="#">家庭</a></li>
+                            <li><a href="#">格斗</a></li>
+                            <li><a href="#">第一人称射击</a></li>
+                            <li><a href="#">经营</a></li>
+                            <li><a href="#">体感</a></li>
+                            <li><a href="#">音乐</a></li>
+                            <li><a href="#">横版</a></li>
+                            <li><a href="#">竞速</a></li>
+                            <li><a href="#">角色扮演</a></li>
+                            <li><a href="#">模拟</a></li>
+                            <li><a href="#">运动</a></li>
+                            <li><a href="#">策略</a></li>
+                            <li><a href="#">卡牌</a></li>
+                            <li><a href="#">战术射击</a></li>
+                            <li><a href="#">第三人称射击</a></li>
+                            <li><a href="#">益智</a></li>
+                        </ul>
+                    </div>
                 </div>
+
+
                 <div class="col-md-4 col col-xs-12">
                     <input type="search" placeholder="Keyword">
                     <span class="glyphicon glyphicon-search"></span>
@@ -137,7 +169,19 @@
     <script>
         $(function() {
             $('.platform').on('click', function() {
-                $('.drop')
+                $('.drop').addClass('show');
+                $('.drop2').removeClass('show');
+                $('.drop li').on('click', function() {
+                    $('.drop').removeClass('show');
+
+                })
+            })
+            $('.game').on('click', function() {
+                $('.drop').removeClass('show');
+                $('.drop2').addClass('show');
+                $('.drop2 li').on('click', function() {
+                    $('.drop2').removeClass('show');
+                })
             })
         })
     </script>

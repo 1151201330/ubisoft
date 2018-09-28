@@ -44,9 +44,75 @@
 
 /* 搜索栏 */
 
+.box {
+    background: #3f3f3f;
+    padding: 15px;
+}
+
+.type {
+    padding: 0;
+}
+
 .type button {
-    display: block;
+    outline: none;
     width: 100%;
+    background: #222;
+    height: 50px;
+    border: none;
+    color: #666;
+    padding-left: 15px;
+}
+
+.type button:hover {
+    /* background: #3f3f3f; */
+    background: rgba(19, 19, 19, 0.3);
+    color: #fff;
+}
+
+.type span {
+    color: #fff;
+}
+
+.position {
+    position: relative;
+}
+
+.drop,
+.drop2 {
+    position: absolute;
+    display: none;
+    margin-top: 5px;
+}
+
+.show {
+    display: block;
+}
+
+.drop ul li,
+.drop2 ul li {
+    /* width: 100%; */
+    width: 414.33px;
+    background: #222;
+    height: 50px;
+    border-bottom: 1px solid #666;
+    line-height: 50px;
+}
+
+.drop ul li a,
+.drop2 ul li a {
+    display: block;
+    padding-left: 15px;
+    color: #666;
+}
+
+.drop ul li a:hover,
+.drop2 ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active {
+    background: #3f3f3f;
 }
 
 
