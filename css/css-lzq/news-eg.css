@@ -36,6 +36,20 @@
 }
 
 
+/* banner结束 */
+
+
+/* content */
+
+
+/* 搜索栏 */
+
+.type button {
+    display: block;
+    width: 100%;
+}
+
+
 /* 移动端，超小屏幕 */
 
 @media (max-width: 767px) {}
