@@ -4,15 +4,35 @@
     height: 410px;
     vertical-align: middle;
     background: url(../../images/images-lzq/news_hero.jpg);
+    display: none;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-style: italic
+    /* margin-top: 60px; */
+    /* display: inline-block; */
+}
+
+.banner h3 {
+    font-size: 14px;
 }
 
 .circle {
+    padding-top: 60px;
     width: 308px;
     height: 308px;
     border-radius: 50%;
     background: #4769b2;
+    opacity: 0.8;
+    margin-top: 40px;
+    margin-left: 50px;
     vertical-align: middle;
     color: #fff;
+}
+
+.circle .glyphicon {
+    font-size: 35px;
 }
 
 
@@ -28,4 +48,8 @@
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .banner {
+        display: block;
+    }
+}
