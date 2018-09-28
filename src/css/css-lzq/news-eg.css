@@ -1,3 +1,8 @@
+body {
+    background: #3f3f3f;
+}
+
+
 /* banner */
 
 .banner {
@@ -39,9 +44,6 @@
 /* banner结束 */
 
 
-/* content */
-
-
 /* 搜索栏 */
 
 .box {
@@ -81,7 +83,8 @@
 .drop2 {
     position: absolute;
     display: none;
-    margin-top: 5px;
+    z-index: 999;
+    /* top: 65px; */
 }
 
 .show {
@@ -113,6 +116,106 @@
 
 .active {
     background: #3f3f3f;
+}
+
+.drop,
+.drop2 {
+    background: #222;
+}
+
+.drop li:nth-child(1),
+.drop2 li:nth-child(1) {
+    margin-top: 5px;
+}
+
+
+/* 搜索栏结束 */
+
+
+/* content */
+
+.news {
+    background: #fff;
+}
+
+.title {
+    background: #3e61ad;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.more {
+    background: #252525;
+    padding: 0;
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.more :hover {
+    background: #3f3f3f;
+    text-decoration: none;
+}
+
+.more a {
+    color: #9d9d9d;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.more a:hover {
+    color: #fff;
+}
+
+.content h1 {
+    color: #252525;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.content .date {
+    color: #565656;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.content p {
+    text-indent: 2em;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.content img {
+    max-width: 600px;
+    height: auto;
+}
+
+
+/* 侧栏，游戏推荐 */
+
+.bj {
+    padding: 10px;
+    background: #0f0f0f;
+}
+
+.sale h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    background-image: url(../../images/images-lzq/header-border-white.png), url(../../images/images-lzq/header-border-white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0, 50% 100%;
+}
+
+.sale img {
+    width: 100%;
+    padding: 0 10px;
 }
 
 
