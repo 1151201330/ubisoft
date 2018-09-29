@@ -94,9 +94,10 @@ body {
 .drop ul li,
 .drop2 ul li {
     /* width: 100%; */
-    width: 414.33px;
+    width: 412.33px;
     background: #222;
     height: 50px;
+    border-left: 1px solid #222;
     border-bottom: 1px solid #666;
     line-height: 50px;
 }
@@ -128,6 +129,17 @@ body {
     margin-top: 5px;
 }
 
+.put input {
+    width: 100%;
+    padding-left: 60px;
+    background: #212121;
+    border: 1px solid #000;
+}
+
+.put input::before {
+    content: 关键字：
+}
+
 
 /* 搜索栏结束 */
 
@@ -149,7 +161,8 @@ body {
 .more {
     background: #252525;
     padding: 0;
-    padding-left: 15px;
+    /* padding-left: 15px; */
+    text-indent: 15px;
     height: 50px;
     line-height: 50px;
 }
@@ -190,7 +203,7 @@ body {
 }
 
 .content img {
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -216,6 +229,94 @@ body {
 .sale img {
     width: 100%;
     padding: 0 10px;
+}
+
+.sale h3 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sale h3 {
+    padding: 15px;
+}
+
+.sale h3 span {
+    display: inline-block;
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+}
+
+.sale h3 .icon1 {
+    background-image: url(../../images/images-lzq/pc-game.png);
+    background-repeat: no-repeat;
+}
+
+.sale h3 .icon2 {
+    background-image: url(../../images/images-lzq/console-game.png);
+    background-repeat: no-repeat;
+}
+
+.sale p {
+    color: #9d9d9d;
+}
+
+.sale .url {
+    padding: 15px;
+}
+
+.sale .enter {
+    /* padding: 0; */
+    width: 48%;
+    line-height: 40px;
+}
+
+.sale .buy {
+    /* padding: 0; */
+    width: 48%;
+    line-height: 40px;
+}
+
+.sale .col-md-6 {
+    padding-right: 0;
+}
+
+.sale .enter a {
+    background: #3e61ad;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sale .buy a {
+    width: 100%;
+    display: block;
+    background: #b1ff53;
+    color: #000;
+    text-decoration: none;
+}
+
+.sale .more-sale {
+    color: #fff;
+}
+
+.sale .more-sale fieldset {
+    border-top: 1px solid #666;
+    width: 364px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+legend {
+    width: 90px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sale .relact {
+    margin-top: 20px;
 }
 
 
