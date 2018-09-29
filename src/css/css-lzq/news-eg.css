@@ -1,5 +1,6 @@
 body {
-    background: #3f3f3f;
+    min-width: 320px;
+    background: #000;
 }
 
 
@@ -65,9 +66,13 @@ body {
     padding-left: 15px;
 }
 
+.type .platform {
+    border-right: 1px solid #3c3c3c
+}
+
 .type button:hover {
     /* background: #3f3f3f; */
-    background: rgba(19, 19, 19, 0.3);
+    background: rgba(19, 19, 19, 0.4);
     color: #fff;
 }
 
@@ -75,16 +80,11 @@ body {
     color: #fff;
 }
 
-.position {
+.box .position {
     position: relative;
-}
-
-.drop,
-.drop2 {
-    position: absolute;
-    display: none;
-    z-index: 999;
-    /* top: 65px; */
+    vertical-align: middle;
+    background: #222;
+    margin: 0 10px;
 }
 
 .show {
@@ -94,7 +94,7 @@ body {
 .drop ul li,
 .drop2 ul li {
     /* width: 100%; */
-    width: 412.33px;
+    width: 414.33px;
     background: #222;
     height: 50px;
     border-left: 1px solid #222;
@@ -129,15 +129,41 @@ body {
     margin-top: 5px;
 }
 
-.put input {
-    width: 100%;
-    padding-left: 60px;
-    background: #212121;
-    border: 1px solid #000;
+.put {
+    padding: 0;
 }
 
-.put input::before {
-    content: 关键字：
+.put input {
+    color: #fff;
+    outline-style: none;
+    background: #212121;
+    border: none;
+}
+
+.put .col-md-10 {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
+}
+
+.put .col-md-10:before {
+    position: absolute;
+    left: 10px;
+    content: "关键字：";
+    color: #6b6b6b;
+    /* text-align: left; */
+}
+
+.put .glyphicon-search {
+    font-size: 24px;
+    color: #6b6b6b;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    /* margin-left: 0; */
 }
 
 
@@ -159,7 +185,6 @@ body {
 }
 
 .more {
-    background: #252525;
     padding: 0;
     /* padding-left: 15px; */
     text-indent: 15px;
@@ -173,6 +198,7 @@ body {
 }
 
 .more a {
+    background: #252525;
     color: #9d9d9d;
     text-decoration: none;
     font-size: 18px;
@@ -209,6 +235,11 @@ body {
 
 
 /* 侧栏，游戏推荐 */
+
+.sale {
+    background: #3f3f3f;
+    height: 2271.68px
+}
 
 .bj {
     padding: 10px;
@@ -303,7 +334,8 @@ body {
 
 .sale .more-sale fieldset {
     border-top: 1px solid #666;
-    width: 364px;
+    /* width: 364px; */
+    width: auto;
     margin-left: 15px;
     margin-top: 10px;
 }
@@ -322,7 +354,58 @@ legend {
 
 /* 移动端，超小屏幕 */
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .drop,
+    .drop2 {
+        /* position: absolute; */
+        display: none;
+        z-index: 999;
+    }
+    .type button {
+        border-bottom: 1px solid #3f3f3f;
+        border-right: none
+    }
+    .type .platform {
+        border-right: none
+    }
+    .box .ml {
+        margin-left: 20px;
+    }
+    .put .col-md-10 {
+        margin-bottom: 20px;
+    }
+    .content img {
+        width: 90%;
+    }
+    .drop ul li,
+    .drop2 ul li {
+        width: 100%;
+        /* width: 414.33px; */
+        background: #222;
+        height: 50px;
+        border-left: 1px solid #222;
+        border-bottom: 1px solid #666;
+        line-height: 50px;
+    }
+    .ml .col-md-2 {
+        padding: 0;
+    }
+    .put .col-md-10:before {
+        position: absolute;
+        left: 20px;
+        top: 4px;
+        content: "关键字：";
+        color: #6b6b6b;
+        /* text-align: left; */
+    }
+    .put input {
+        padding-left: 60px;
+        margin-top: 3px;
+    }
+    .sale {
+        height: 100%
+    }
+}
 
 
 /* 小屏幕（平板，大于等于 768px） */
@@ -335,5 +418,11 @@ legend {
 @media (min-width: 992px) {
     .banner {
         display: block;
+    }
+    .drop,
+    .drop2 {
+        position: absolute;
+        display: none;
+        z-index: 999;
     }
 }

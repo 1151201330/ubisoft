@@ -1,17 +1,17 @@
 $(function() {
-    $('.platform').on('click', function() {
-        $('.drop').addClass('show');
-        $('.drop2').removeClass('show');
-        $('.drop li').on('click', function() {
+    $(document).on('click', function(ev) {
+        if (ev.target == $('.platform')[0]) {
+            $('.drop').addClass('show');
+        } else {
             $('.drop').removeClass('show');
-
-        })
+        }
     })
-    $('.game').on('click', function() {
-        $('.drop').removeClass('show');
-        $('.drop2').addClass('show');
-        $('.drop2 li').on('click', function() {
+
+    $(document).on('click', function(ev) {
+        if (ev.target == $('.game')[0]) {
+            $('.drop2').addClass('show');
+        } else {
             $('.drop2').removeClass('show');
-        })
+        }
     })
 })
