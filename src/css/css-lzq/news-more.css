@@ -1,0 +1,193 @@
+/* 搜索栏 */
+
+.box {
+    background: #3f3f3f;
+    padding: 15px;
+}
+
+.type {
+    padding: 0;
+}
+
+.type button {
+    outline: none;
+    width: 100%;
+    background: #222;
+    height: 50px;
+    border: none;
+    color: #666;
+    padding-left: 15px;
+}
+
+.type .platform {
+    border-right: 1px solid #3c3c3c
+}
+
+.type button:hover {
+    /* background: #3f3f3f; */
+    background: rgba(19, 19, 19, 0.4);
+    color: #fff;
+}
+
+.type span {
+    color: #fff;
+}
+
+.box .position {
+    position: relative;
+    vertical-align: middle;
+    background: #222;
+    margin: 0 10px;
+}
+
+.show {
+    display: block;
+}
+
+.drop ul li,
+.drop2 ul li {
+    /* width: 100%; */
+    width: 397.33px;
+    background: #222;
+    height: 50px;
+    border-left: 1px solid #222;
+    border-bottom: 1px solid #666;
+    line-height: 50px;
+}
+
+.drop ul li a,
+.drop2 ul li a {
+    display: block;
+    padding-left: 15px;
+    color: #666;
+}
+
+.drop ul li a:hover,
+.drop2 ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active {
+    background: #3f3f3f;
+}
+
+.drop,
+.drop2 {
+    background: #222;
+}
+
+.drop li:nth-child(1),
+.drop2 li:nth-child(1) {
+    margin-top: 5px;
+}
+
+.put {
+    padding: 0;
+}
+
+.put input {
+    color: #fff;
+    outline-style: none;
+    background: #212121;
+    border: none;
+}
+
+.put .col-md-10 {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
+}
+
+.put .col-md-10:before {
+    position: absolute;
+    left: 10px;
+    content: "关键字：";
+    color: #6b6b6b;
+    /* text-align: left; */
+}
+
+.put .glyphicon-search {
+    font-size: 24px;
+    color: #6b6b6b;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    /* margin-left: 0; */
+}
+
+
+/* 搜索栏结束 */
+
+
+/* 移动端，超小屏幕 */
+
+@media (max-width: 767px) {
+    .drop,
+    .drop2 {
+        /* position: absolute; */
+        display: none;
+        z-index: 999;
+    }
+    .type button {
+        border-bottom: 1px solid #3f3f3f;
+        border-right: none
+    }
+    .type .platform {
+        border-right: none
+    }
+    .box .ml {
+        margin-left: 20px;
+    }
+    .put .col-md-10 {
+        margin-bottom: 20px;
+    }
+    .drop ul li,
+    .drop2 ul li {
+        width: 100%;
+        /* width: 414.33px; */
+        background: #222;
+        height: 50px;
+        border-left: 1px solid #222;
+        border-bottom: 1px solid #666;
+        line-height: 50px;
+    }
+    .ml .col-md-2 {
+        padding: 0;
+    }
+    .put .col-md-10:before {
+        position: absolute;
+        left: 20px;
+        top: 4px;
+        content: "关键字：";
+        color: #6b6b6b;
+        /* text-align: left; */
+    }
+    .put input {
+        padding-left: 60px;
+        margin-top: 3px;
+    }
+}
+
+
+/* 小屏幕（平板，大于等于 768px） */
+
+@media (min-width: 768px) {}
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+
+@media (min-width: 992px) {
+    .banner {
+        display: block;
+    }
+    .drop,
+    .drop2 {
+        position: absolute;
+        display: none;
+        z-index: 999;
+    }
+}
