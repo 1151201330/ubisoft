@@ -7,3 +7,8 @@ $('.search-action').on('click', function() {
 $('.nav-right-btn').on('click', function() {
     $('.button-show').slideToggle();
 });
+
+//移动端游戏板块下拉框
+$('.game-btn').on('click', function() {
+    $('.game-show').css("display") === "none" ? $('.game-show').css("display", "block") : $('.game-show').css("display", "none");
+});
