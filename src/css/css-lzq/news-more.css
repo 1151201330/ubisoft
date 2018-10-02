@@ -173,6 +173,48 @@
 }
 
 
+/* content */
+
+.content {
+    background: #2e2e2e;
+}
+
+.content .part {
+    padding: 15px;
+    /* padding-right: 0; */
+}
+
+.content .wrap {
+    padding-left: 0;
+}
+
+.content img {
+    width: 100%;
+    /* min-width: 160px; */
+}
+
+.content .left {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px
+}
+
+.content .date {
+    color: #565656;
+    font-weight: bold;
+}
+
+.content p {
+    color: #969696;
+    height: 60px;
+}
+
+
 /* 小屏幕（平板，大于等于 768px） */
 
 @media (min-width: 768px) {}
@@ -189,5 +231,9 @@
         position: absolute;
         display: none;
         z-index: 999;
+    }
+    .content .right {
+        background: #000;
+        height: 143px;
     }
 }
