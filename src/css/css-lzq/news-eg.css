@@ -354,7 +354,7 @@ legend {
 
 /* 移动端，超小屏幕 */
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .drop,
     .drop2 {
         /* position: absolute; */
@@ -410,7 +410,17 @@ legend {
 
 /* 小屏幕（平板，大于等于 768px） */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    /* .banner {
+        display: none;
+    }
+    .drop,
+    .drop2 {
+        position: absolute;
+        display: none;
+        z-index: 999;
+    } */
+}
 
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
