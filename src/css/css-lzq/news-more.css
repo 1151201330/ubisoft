@@ -123,9 +123,62 @@
 /* 搜索栏结束 */
 
 
+/* content */
+
+.content {
+    background: #2e2e2e;
+}
+
+.content .part {
+    padding: 15px;
+}
+
+.content .wrap {
+    padding-left: 0;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    min-width: 160px;
+}
+
+.content .left {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.content .date {
+    color: #565656;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 13px;
+    color: #969696;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 50px;
+}
+
+.part .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 /* 移动端，超小屏幕 */
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .drop,
     .drop2 {
         /* position: absolute; */
@@ -170,54 +223,45 @@
         padding-left: 60px;
         margin-top: 3px;
     }
-}
-
-
-/* content */
-
-.content {
-    background: #2e2e2e;
-}
-
-.content .part {
-    padding: 15px;
-    /* padding-right: 0; */
-}
-
-.content .wrap {
-    padding-left: 0;
-}
-
-.content img {
-    width: 100%;
-    /* min-width: 160px; */
-}
-
-.content .left {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.content a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px
-}
-
-.content .date {
-    color: #565656;
-    font-weight: bold;
-}
-
-.content p {
-    color: #969696;
-    height: 60px;
+    .part a {
+        font-size: 14px;
+    }
+    .content .right {
+        background: #000;
+    }
+    .content img {
+        width: 100%;
+        min-width: 160px;
+        overflow: hidden;
+    }
+    .content .date {
+        color: #565656;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .content .part {
+        padding-bottom: 0;
+    }
+    .content .wrap {
+        padding-left: 15px
+    }
+    .content p {
+        font-size: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 52px;
+    }
 }
 
 
 /* 小屏幕（平板，大于等于 768px） */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) and (max-width:991px) {
+    .content .right {
+        background: #000;
+        height: 160px;
+    }
+}
 
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -232,6 +276,21 @@
         display: none;
         z-index: 999;
     }
+    .content .right {
+        background: #000;
+        /* height: 143px; */
+    }
+    .content .part {
+        padding: 15px;
+        padding-bottom: 0;
+    }
+    .content .wrap {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1201px) {
     .content .right {
         background: #000;
         height: 143px;
