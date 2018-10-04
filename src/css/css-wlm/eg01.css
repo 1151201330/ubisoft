@@ -3,6 +3,12 @@
     padding: 0;
     margin:0
 }
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -84,7 +90,7 @@ fieldset{
     text-overflow: ellipsis;
 }
 .btn{
-    background:url('../image/3.png') 0 -4659px no-repeat;
+    background:url('../image-wlm/3.png') 0 -4659px no-repeat;
     width: 35px;
     height: 35px;
     position: absolute;
@@ -96,14 +102,19 @@ fieldset{
 .nav-right{
  width:25%;
  float:none;
- position: relative
+ display: flex;
+ position: relative;
+ display: -webkit-box;
 
 }
 .nav-dd{
-   margin: 0 35% 0 45%;
+    width:77px;
+    height:39px;
+   margin: 0 35% 0 auto;
 }
 
-.nav-right a{
+.nav-right .link>a{
+   
    padding: 10px 10px 10px 17px;
     letter-spacing: .1px;
     font-family: Trade Gothic Condensed,Roboto Condensed,Arial,sans-serif;
@@ -111,5 +122,186 @@ fieldset{
     text-transform: uppercase;
     font-size: 14px;
     color: #2a2828;
+    float:left
 
   } 
+  .nav-pp{
+     min-width: 92px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: min-width .3s;
+    transition: min-width .3s;
+  }
+  .nav-p-d{
+      background:#cef156;
+      width:100%;
+      height:100%
+  }
+.nav-p-sp1{
+    font: 22px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    color:#fff;
+    display:block;
+    width:35px;
+    height: 35px;
+    position: absolute;
+    top:-1px;
+    left:-17px;
+    text-align: center;
+    background:#203348;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 35px;
+
+}
+ .nav-p-sp2{
+    font:16px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    display: block;
+    padding-left: 17px;
+    height: 100%;
+    line-height:33px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+.nav-btm{
+    width:960px;
+    margin:25px auto 0;
+    position: relative;
+    text-align: center;
+}
+.nav-btm>li{
+    display:inline-block;
+}
+.nav-btm>li>a{
+    padding:11px 17px;
+    display:inline-block;
+    font:16px/16px Trade Gothic Condensed,Roboto Condensed,Arial,sans-serif;
+    color:#000;
+    letter-spacing: .3px;
+    line-height: 17px;
+}
+.nac-btm>li>i{
+        display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.nav-btm li a{
+    text-decoration: none
+}
+.col{
+   color: #969696;
+    font-size: 18px;
+    margin-left: 4px;
+}
+ 
+#carousel-example-generic .carousel-indicators{
+  
+        position: absolute;
+    bottom: 10px;
+    right:40px;
+    z-index: 15;
+    left: 125%;
+    width:40px;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+      
+}
+#carousel-example-generic li{
+    background-color:#fff;
+    border:2px solid #fff
+}
+ #carousel-example-generic .carousel-indicators .active {
+   
+    background-color: #6fb1fb;
+}
+#main{
+    background:#f2f2f2;
+}
+.wrapper{
+    width: 960px;
+    margin:0 auto;
+}
+.wrapper .pushes{
+    margin-bottom: 35px;
+    overflow:hidden
+}
+.wrapper .push{
+    line-height: 110%;
+    width: 25%;
+    float: left;
+    padding: 1px;
+    height: 160px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.wrapper .push a{
+    text-decoration: none;
+}
+.push-tile{
+    position: relative;
+    height:100%;
+}
+
+.inner-img{
+    margin:0 10px 0 20px;
+    width: 85px;
+    height: 125px;
+    display: inline-block;
+}
+.inner-img img{
+   padding-top: 10px;
+
+}
+#main img{
+     width: 100%;
+    max-height: 100%;
+}
+.wrapper .push:first-child {
+    padding-left: 0;
+}
+.inner-name{
+    text-align: left;
+    max-width: 49%;
+    margin: 15px 0 0 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.name-link{
+    font: 16px/1.2 Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    color: #191919;
+    text-decoration: none;
+}
+.product-pricting>div{
+    position: absolute;
+    bottom: 5px;
+    right:5px;
+}
+.product-btm{
+    display: inline-block;
+    vertical-align: bottom;
+   
+}
+.product-sale{
+    display:inline-block;
+  background:#191919;
+  color:#fff;
+  font: 15px/24px Trade Gothic Condensed,Roboto Condensed,Arial,sans-serif;
+  padding: 0 5px 0 3px;
+}
+.product-show{
+    display: inline-block;
+    background:#77f1b6;
+    padding:0 8px;
+    color:#191919;
+    margin-left:-5px;
+    font: 18px/24px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+}
