@@ -299,9 +299,269 @@ fieldset{
 }
 .product-show{
     display: inline-block;
-    background:#77f1b6;
+    background:#cef156;
     padding:0 8px;
     color:#191919;
     margin-left:-5px;
     font: 18px/24px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+}
+.cap{
+    height:46px;
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    padding: 0 10px;
+    font: 14px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    margin:0 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    display:table
+}
+.cap>div{
+        display: table-cell;
+    vertical-align: middle;
+   
+}
+.cap>div>p{
+    margin:0;
+}
+.push .cap-sp{
+    background:url("../image-wlm/9.png") no-repeat;
+    background-position: 0 -7042px;
+    width:76px;
+    height:76px;
+    position: absolute;
+    left:50%;
+    top:25px;
+    transform: translateX(-50%);
+} 
+.wrapper .push-youtube:hover .cap-sp, .wrapper .push-twitch:hover .cap-sp {
+    background-image: url("../image-wlm/9.png");
+    background-position: 0 -6946px;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 76px;
+}
+.section-title{
+    text-align: center;
+    padding-bottom: 5px;
+}
+.section-title>h2{
+     
+    font: 30px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    line-height: 30px;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+   
+}
+.section-title h2:before,h2::after {
+    content: '';
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+}
+.section-title h2:before{
+        border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+.section-title h2:after {
+    border-top: 1px solid #000;
+    margin-top: 5px;
+}
+.ul-container{
+    overflow:hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.li-title{
+    width:20%;
+    height:320px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    background:#fff;
+}
+.ul-container .li-title .section-img{
+    border-bottom:1px solid #d8d8d8;
+    display: block;
+    height: 205px;
+   
+}
+#main .section-img img{
+    width:auto;
+    padding:20px;
+    display:block;
+    height:auto;
+    max-height: 100%;
+    max-width:100%;
+    margin:auto;
+
+}
+.section-link .section-name{
+    font: 14px/1.2 Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    color: #000;
+    padding: 0 20px;
+    margin: 10px 0 0;
+}
+.product-pring{
+    width: 191px;
+    right: 2px;
+    position: absolute;
+    bottom: 3px;
+    text-align: right;
+}
+.product-price>:last-child{
+    font: 15px/24px Trade Gothic Condensed,Roboto Condensed,Arial,sans-serif;
+    padding: 0 5px 0 3px;
+    background-color: #191919;
+    color: #fff;
+    display:inline-block
+}
+.li-title-a{
+    display:block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer
+}
+.main-fot::after{
+    clear:both;
+    content: "";
+    display: table;
+}
+ .product-full{
+    text-align: right;
+    margin: 10px 0 35px;
+    text-transform: uppercase;
+    float: right;
+     width: 100%;
+     clear:both;
+}
+.wrapper .product-full>a{
+    text-decoration: none;
+    color: #000;
+    font: 14px Trade Gothic Condensed,Roboto Condensed,Arial,sans-serif;
+    background-color: #e1e1e1;
+    padding: 6px 8px;
+    margin-right: 10px;
+}
+.product-full>a::after{
+    background-image: url(../image-wlm/9.png);
+    background-position: 0 -1593px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 17px;
+    content: '';
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    top: 3px;
+}
+.product-price .product-precent{
+    background-color: rgb(255, 37, 83);
+    color: rgb(255, 255, 255);
+    display:inline-block;
+    font: 17px/24px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    padding:0 5px;
+    vertical-align: bottom;
+ 
+}
+.product-price{
+    font-size:0;
+}
+.product-price .product-stand{
+    display:inline-block;
+    font: 11px/24px Trade Gothic Condensed,Roboto Condensed,Arial,sans-serif;
+    background:#191919;
+    color:#fff;
+    vertical-align: bottom;
+    text-decoration: line-through;
+}
+footer{
+    bakground: #ffffff;
+}
+.footer-banner{
+    padding:25px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.banner-ul{
+    width:690px;
+    max-width:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    
+}
+.banner-fot li{
+    margin-right:40px;
+    width: 183px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.banner-fot img{
+    max-width:100%
+}
+.banner-fot li:last-child {
+    margin-right: 0;
+}
+.footer-container{
+    width:805px;
+    margin: 45px auto 30px auto;
+}
+.footer-container .footer-item{
+    width:190px;
+    border:2px solid #000;
+    margin-right: 15px;
+    padding: 0 10px;
+    min-height: 150px;
+    float:left;
+    height:150px;
+}
+.content-rest h4{
+    margin:-10px auto 0 auto;
+    height:22px;
+    width:90px;
+    text-align:center;
+    background: #ffffff;
+    font: 16px/22px Trade Gothic Bd Condensed,Roboto Condensed Bold,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.footer-item ul{
+        padding: 10px 25px;
+}
+.footer-item a{
+    font: 14px/20px Trade Gothic Condensed,Roboto Condensed,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+.footer-container .footer-item:last-child{
+    margin-right:0
+}
+.footer-container .footer-item:last-child h4{
+    width:145px;
+
+}
+.footer-container .footer-item:nth-child(2) h4{
+    width:95px;
+    
+}
+.footer-container .footer-item:nth-child(3) h4{
+    width:145px;
+    
 }
