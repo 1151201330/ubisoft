@@ -3,7 +3,6 @@
 /* footer */
 
 .footer {
-    margin-top: 300px;
     background-color: #000;
     color: #999999;
     text-align: center;
@@ -61,4 +60,72 @@
     height: 50px;
     width: 60px;
     float: right;
+}
+
+
+/* game */
+
+.game>h2 {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.game>a {
+    color: #9d9d9d;
+}
+
+.game>a:hover {
+    color: white;
+}
+
+
+/* language */
+
+.language {
+    padding-top: 30px;
+}
+
+.language-btn {
+    padding: 8px;
+    color: #999;
+    background-color: #393939;
+    border: none;
+}
+
+.language-btn>i {
+    font-size: 12px;
+}
+
+.language-btn:hover {
+    color: white;
+}
+
+
+/* about */
+
+.about {
+    padding-top: 30px;
+}
+
+.about>a:hover {
+    color: white;
+}
+
+
+/* copyright */
+
+.copyright {
+    padding: 10px 0;
+}
+
+.copyright>p {
+    margin-bottom: 10px;
+}
+
+.copyright>p:nth-of-type(4) {
+    padding: 20px 0;
 }

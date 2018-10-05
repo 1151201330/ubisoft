@@ -40,7 +40,7 @@
                     <span>搜索游戏</span>
                 </div>
                 <div class="search-show container">
-                    <input type="text" class="active" placeholder="请输入关键字">
+                    <input type="text" class="-active" placeholder="请输入关键字">
                     <ol class="search-show-result"></ol>
                 </div>
             </div>
@@ -50,7 +50,16 @@
         <div class="button-show">
             <ul class="button-show-list">
                 <li class="active"><a href="#">首页</a></li>
-                <li><a href="#">游戏</a></li>
+                <li>
+                    <a href="#">游戏</a>
+                    <button class="game-btn glyphicon glyphicon-triangle-bottom"></button>
+                    <ul class="game-show">
+                        <li><a href="#">主机游戏</a></li>
+                        <li><a href="#">PC游戏</a></li>
+                        <li><a href="#">移动游戏</a></li>
+                        <li><a href="#">VR游戏</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">商城</a></li>
                 <li><a href="#">支持</a></li>
                 <li><a href="#">Uplay</a></li>
