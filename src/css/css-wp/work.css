@@ -15,7 +15,10 @@ h4,
 h5,
 h6,
 a,
-{
+.col-xs-4,
+.col-md-3,
+.col-sm-12,
+.row {
     margin: 0;
     padding: 0;
 }
@@ -340,6 +343,7 @@ body,
         padding: 50px;
         position: relative;
         background: #fff;
+        min-height: 580px;
     }
     .game-overview-wrap .game-specs {
         float: left;
@@ -396,6 +400,7 @@ body,
         font-size: 20px;
         line-height: 50px;
         text-indent: 30px;
+        cursor: pointer;
     }
     .change {
         background-color: #c00705;
@@ -409,11 +414,13 @@ body,
         color: #454545;
         margin-top: 50px;
         margin-left: 30px;
+        height: 60px;
+        width: 50%;
         float: left;
     }
     .game-overview-wrap .game-overview .copy-block {
         padding-top: 100px;
-        padding-left: 26%;
+        padding-left: 27%;
     }
     .game-overview-wrap .game-overview .copy-block h2 {
         color: #c00705;
@@ -423,6 +430,87 @@ body,
     .game-overview-wrap .game-overview .copy-block p {
         margin-bottom: 20px;
         color: #454545;
+    }
+    /* 视觉 */
+    .media-wrap {
+        position: relative;
+    }
+    .media-wrap .ubi-title {
+        background-color: #c00705;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        padding-left: 20px;
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+    .media-wrap>.row>div>a>img {
+        width: 100%;
+    }
+    .media-wrap>.row>div .caption {
+        position: absolute;
+        bottom: 0px;
+        color: #ffffff;
+        width: 100%;
+        height: 60px;
+        padding: 0px;
+    }
+    .media-wrap>.row>div .caption h3 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        line-height: 60px;
+        margin-bottom: 0px;
+        padding-left: 20px;
+        font-size: 14px;
+        background: #000;
+        opacity: 0.85;
+    }
+    .media-wrap>.row>div .caption .media-ico {
+        background-color: #c00705;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+    }
+    .media-wrap>.row>div .pic-hid {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.4;
+        z-index: 8;
+        visibility: hidden;
+    }
+    .media-wrap>.row>div:hover .pic-hid {
+        visibility: inherit;
+    }
+    .all-modal {
+        width: 100%;
+        height: 1349px;
+        background: rgba(00, 00, 00, 0.7);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+    }
+    .modal-content {
+        width: 80%;
+        position: fixed;
+        top: -200px;
+        /* top: 30px; */
+        left: 10%;
+        z-index: 10000;
+    }
+    .modal-content img {
+        width: 100%;
     }
 }
 
@@ -508,10 +596,355 @@ body,
         line-height: 60px;
         margin-right: 0!important;
     }
+    /* 第二段 */
+    .circle-wrap {
+        background: linear-gradient(-45deg, #c00705 40%, #c00705 100%);
+        height: 439px;
+    }
+    .circle-wrap .circle {
+        font-size: 3.5rem;
+        vertical-align: middle;
+        padding: 45px 30px;
+        margin: 0 auto;
+    }
+    .circle-wrap .circle .circle-word {
+        transition: opacity 300ms 250ms ease;
+        opacity: 1;
+        padding: 0px 100px;
+        text-align: center;
+        color: #fff;
+        height: 610px;
+        width: 610px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 6px;
+    }
+    .circle-wrap .circle .circle-word h2 {
+        line-height: 1px;
+        font-size: 14px;
+        position: relative;
+        width: 89px;
+        height: 14px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .circle-wrap .circle .circle-word h2::before {
+        font-size: 0;
+        line-height: 0;
+        height: 0;
+        width: 0;
+        content: ' ';
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid white;
+        margin-top: 15px;
+        margin-left: 19px;
+        display: block;
+        position: absolute
+    }
+    .circle-wrap .circle .circle-word h1 {
+        margin: 27px 0 23px;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        width: 410px;
+    }
+    .circle-wrap .circle .circle-word a {
+        padding: 18px 0px;
+        height: 50px;
+        width: 50px;
+        margin-left: 175px;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        text-align: center;
+        line-height: 20px;
+    }
+    .circle-wrap .circle .circle-word a .icon-arrow-up {
+        color: black;
+        font-size: 30px;
+        color: #c00705;
+    }
+    /* 最新资讯 */
+    .news-wrap {
+        border-color: #c00705;
+        border-width: 25px;
+        border-style: solid;
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .news-wrap h1 {
+        background-color: #c00705;
+        color: #fff;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    .news-wrap ul {
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 0px;
+        list-style: none;
+        margin-top: 30px;
+    }
+    .news-wrap ul li {
+        vertical-align: top;
+        display: inline-block;
+        width: 22%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 0 1%;
+        text-align: left;
+    }
+    .news-wrap ul li .newspic {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .news-wrap ul li .newspic img {
+        width: 100%;
+    }
+    .news-wrap ul li .newspic .newsdate {
+        color: #337ab7;
+    }
+    .news-wrap ul li h2 {
+        font-size: 20px;
+        height: 45px;
+        overflow: hidden;
+    }
+    .news-wrap ul li h2 a {
+        color: #c00705;
+    }
+    .news-wrap ul li p {
+        font-size: 14px;
+        line-height: 20px;
+        height: 60px;
+        overflow: hidden;
+        color: #999;
+    }
+    .news-wrap ul li .newsbtn {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        border: 0px;
+        background-color: #c00705;
+    }
+    .news-wrap ul li .newsbtn .block {
+        float: right;
+        display: block;
+        font-size: 18px;
+        border-radius: 50%;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 10px;
+    }
+    .news-wrap ul li .newsbtn .block .icon-qiepian17 {
+        color: #c00705;
+        font-size: 20px;
+    }
+    /* 游戏简介 */
+    .game-overview-wrap {
+        width: 100%;
+        position: relative;
+        background: #fff;
+        min-height: 580px;
+        margin-top: 50px;
+    }
+    .game-overview-wrap .game-specs {
+        float: left;
+        padding: 0 25px 0 0;
+        width: 100%;
+        z-index: 100;
+        position: inherit;
+    }
+    .game-overview-wrap .game-specs .box-art {
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .game-overview-wrap .game-specs .box-art img {
+        border: 0;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    .game-overview-wrap .game-specs .clearfix {
+        margin: 16px auto;
+        width: 45%;
+    }
+    .game-overview-wrap .game-specs dt {
+        width: 33%;
+        font-size: 11px;
+        line-height: 14px;
+        float: left;
+        color: #454545;
+        font-weight: 700;
+        text-align: left;
+    }
+    .game-overview-wrap .game-specs dt dd {
+        width: 67%;
+        margin: 0px 0px 12px;
+        font-size: 11px;
+        line-height: 14px;
+        float: left;
+    }
+    .game-overview-wrap .game-overview {
+        position: relative;
+        /* overflow: hidden; */
+    }
+    .game-overview-wrap .game-overview ul {
+        display: block;
+        width: 100%;
+        list-style: none;
+        float: left;
+    }
+    .game-overview-wrap .game-overview ul li {
+        width: 100%;
+        min-height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        text-indent: 30px;
+        cursor: pointer;
+    }
+    .change {
+        background-color: #c00705;
+        color: white;
+    }
+    .unchange {
+        background-color: black;
+        color: #969696;
+    }
+    .change2 {
+        background-color: #c00705;
+        color: white;
+    }
+    .unchange2 {
+        background-color: black;
+        color: #969696;
+    }
+    .game-overview-wrap .game-overview ul li .icon-jiahao {
+        font-size: 30px;
+        float: right;
+        margin-right: 10px;
+    }
+    .game-overview-wrap .game-overview ul li .icon-iconjian {
+        font-size: 30px;
+        float: right;
+        margin-right: 10px;
+    }
+    .game-overview-wrap .game-overview ul li:nth-child(1)>p {
+        color: #454545;
+        background: #fff;
+    }
+    .game-overview-wrap .game-overview ul li .copy-block {
+        background: #fff;
+    }
+    .game-overview-wrap .game-overview ul li .copy-block h2 {
+        color: #c00705;
+    }
+    .game-overview-wrap .game-overview ul li .copy-block p {
+        margin-bottom: 20px;
+        color: #454545;
+    }
+    /* 视觉 */
+    .media-wrap {
+        position: relative;
+        float: left;
+    }
+    .media-wrap .ubi-title {
+        background-color: #c00705;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        height: 50px;
+    }
+    .media-wrap>.row>div>a>img {
+        width: 100%;
+    }
+    .media-wrap>.row>div .caption {
+        position: absolute;
+        bottom: 0px;
+        color: #ffffff;
+        width: 100%;
+        height: 60px;
+        padding: 0px;
+    }
+    .media-wrap>.row>div .caption h3 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        line-height: 60px;
+        margin-bottom: 0px;
+        padding-left: 20px;
+        font-size: 14px;
+        background: #000;
+        opacity: 0.85;
+    }
+    .media-wrap>.row>div .caption .media-ico {
+        background-color: #c00705;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+    }
+    .media-wrap>.row>div .pic-hid {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.4;
+        z-index: 8;
+        visibility: hidden;
+    }
+    .media-wrap>.row>div:hover .pic-hid {
+        visibility: inherit;
+    }
+    .all-modal {
+        width: 100%;
+        height: 1349px;
+        background: rgba(00, 00, 00, 0.7);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+    }
+    .modal-content {
+        width: 80%;
+        position: fixed;
+        top: -200px;
+        /* top: 30px; */
+        left: 10%;
+        z-index: 10000;
+    }
+    .modal-content img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
-    /* 当宽度小于991的样式 */
+    /* 当宽度小于767的样式 */
     /* 轮播图 */
     .carous {
         margin-top: 50px!important;
@@ -591,5 +1024,346 @@ body,
         background: black;
         line-height: 60px;
         margin-right: 0!important;
+    }
+    /* 第二段 */
+    .circle-wrap {
+        background: linear-gradient(-45deg, #c00705 40%, #c00705 100%);
+        height: 234px;
+    }
+    .circle-wrap .circle {
+        font-size: 3.5rem;
+        vertical-align: middle;
+        padding: 45px 30px;
+        margin: 0 auto;
+    }
+    .circle-wrap .circle .circle-word {
+        transition: opacity 300ms 250ms ease;
+        opacity: 1;
+        text-align: center;
+        color: #fff;
+        height: 610px;
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: -27px;
+    }
+    .circle-wrap .circle .circle-word h2 {
+        line-height: 1px;
+        font-size: 14px;
+        position: relative;
+        width: 89px;
+        height: 14px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .circle-wrap .circle .circle-word h2::before {
+        font-size: 0;
+        line-height: 0;
+        height: 0;
+        width: 0;
+        content: ' ';
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid white;
+        margin-top: 15px;
+        margin-left: 19px;
+        display: block;
+        position: absolute
+    }
+    .circle-wrap .circle .circle-word h1 {
+        margin: 15px 0;
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .circle-wrap .circle .circle-word a {
+        padding: 18px 0px;
+        height: 35px;
+        width: 35px;
+        margin-left: 45%;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        text-align: center;
+        line-height: 0;
+    }
+    .circle-wrap .circle .circle-word a .icon-arrow-up {
+        color: black;
+        font-size: 20px;
+        color: #c00705;
+    }
+    /* 最新资讯 */
+    .news-wrap {
+        border-color: #c00705;
+        border-width: 25px;
+        border-style: solid;
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .news-wrap h1 {
+        background-color: #c00705;
+        color: #fff;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    .news-wrap ul {
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 0px;
+        list-style: none;
+        margin-top: 30px;
+    }
+    .news-wrap ul li {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 0 1%;
+        text-align: left;
+    }
+    .news-wrap ul li .newspic {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .news-wrap ul li .newspic img {
+        width: 100%;
+    }
+    .news-wrap ul li .newspic .newsdate {
+        color: #337ab7;
+    }
+    .news-wrap ul li h2 {
+        font-size: 20px;
+        height: 45px;
+        overflow: hidden;
+    }
+    .news-wrap ul li h2 a {
+        color: #c00705;
+    }
+    .news-wrap ul li p {
+        font-size: 14px;
+        line-height: 20px;
+        height: 60px;
+        overflow: hidden;
+        color: #999;
+    }
+    .news-wrap ul li .newsbtn {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        border: 0px;
+        background-color: #c00705;
+    }
+    .news-wrap ul li .newsbtn .block {
+        float: right;
+        display: block;
+        font-size: 18px;
+        border-radius: 50%;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 10px;
+    }
+    .news-wrap ul li .newsbtn .block .icon-qiepian17 {
+        color: #c00705;
+        font-size: 20px;
+    }
+    /* 游戏简介 */
+    .game-overview-wrap {
+        width: 100%;
+        position: relative;
+        background: #fff;
+        margin-top: 50px;
+    }
+    .game-overview-wrap .game-specs {
+        float: left;
+        padding: 0 25px 0 0;
+        width: 100%;
+        z-index: 100;
+        position: inherit;
+    }
+    .game-overview-wrap .game-specs .box-art {
+        width: 67%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .game-overview-wrap .game-specs .box-art img {
+        border: 0;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    .game-overview-wrap .game-specs .clearfix {
+        color: #666;
+        margin: 0;
+        text-align: left;
+        margin-left: 30px;
+    }
+    .game-overview-wrap .game-specs dt {
+        width: 27%;
+        font-size: 11px;
+        line-height: 14px;
+        float: left;
+        color: #454545;
+        font-weight: 700;
+        text-align: left;
+    }
+    .game-overview-wrap .game-specs dt dd {
+        width: 67%;
+        margin: 0px 0px 12px;
+        font-size: 11px;
+        line-height: 14px;
+        float: left;
+    }
+    .game-overview-wrap .game-overview {
+        position: relative;
+        /* overflow: hidden; */
+    }
+    .game-overview-wrap .game-overview ul {
+        display: block;
+        width: 100%;
+        list-style: none;
+        float: left;
+    }
+    .game-overview-wrap .game-overview ul li {
+        width: 100%;
+        min-height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        text-indent: 30px;
+        cursor: pointer;
+    }
+    .change {
+        background-color: #c00705;
+        color: white;
+    }
+    .unchange {
+        background-color: black;
+        color: #969696;
+    }
+    .change2 {
+        background-color: #c00705;
+        color: white;
+    }
+    .unchange2 {
+        background-color: black;
+        color: #969696;
+    }
+    .game-overview-wrap .game-overview ul li .icon-jiahao {
+        font-size: 30px;
+        float: right;
+        margin-right: 10px;
+    }
+    .game-overview-wrap .game-overview ul li .icon-iconjian {
+        font-size: 30px;
+        float: right;
+        margin-right: 10px;
+    }
+    .game-overview-wrap .game-overview ul li:nth-child(1)>p {
+        color: #454545;
+        background: #fff;
+    }
+    .game-overview-wrap .game-overview ul li .copy-block {
+        background: #fff;
+    }
+    .game-overview-wrap .game-overview ul li .copy-block h2 {
+        color: #c00705;
+    }
+    .game-overview-wrap .game-overview ul li .copy-block p {
+        margin-bottom: 20px;
+        color: #454545;
+    }
+    /* 视觉 */
+    .media-wrap {
+        position: relative;
+        float: left;
+    }
+    .media-wrap .ubi-title {
+        background-color: #c00705;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        height: 50px;
+    }
+    .media-wrap>.row>div>a>img {
+        width: 100%;
+    }
+    .media-wrap>.row>div .caption {
+        position: absolute;
+        bottom: 0px;
+        color: #ffffff;
+        width: 100%;
+        height: 60px;
+        padding: 0px;
+    }
+    .media-wrap>.row>div .caption h3 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        line-height: 60px;
+        margin-bottom: 0px;
+        padding-left: 20px;
+        font-size: 14px;
+        background: #000;
+        opacity: 0.85;
+    }
+    .media-wrap>.row>div .caption .media-ico {
+        background-color: #c00705;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+    }
+    .media-wrap>.row>div .pic-hid {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.4;
+        z-index: 8;
+        visibility: hidden;
+    }
+    .media-wrap>.row>div:hover .pic-hid {
+        visibility: inherit;
+    }
+    .all-modal {
+        width: 100%;
+        height: 1349px;
+        background: rgba(00, 00, 00, 0.7);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+    }
+    .modal-content {
+        width: 80%;
+        position: fixed;
+        top: -200px;
+        /* top: 30px; */
+        left: 10%;
+        z-index: 10000;
+    }
+    .modal-content img {
+        width: 100%;
     }
 }
