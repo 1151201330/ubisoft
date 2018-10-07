@@ -7,6 +7,7 @@ body {
 /* banner */
 
 .banner {
+    margin-top: 50px;
     height: 410px;
     vertical-align: middle;
     background: url(../../images/images-lzq/news_hero.jpg);
@@ -428,6 +429,7 @@ legend {
 @media (min-width: 992px) {
     .banner {
         display: block;
+        margin-top: 50px;
     }
     .drop,
     .drop2 {
