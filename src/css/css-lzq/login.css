@@ -1,0 +1,12 @@
+.row {
+    width: 600px;
+    margin: 0 auto;
+    padding-left: 150px;
+}
+
+#email,
+#pwd,
+#create {
+    width: 400px;
+    color: #fff;
+}
