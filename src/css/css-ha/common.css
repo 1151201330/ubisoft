@@ -83,6 +83,8 @@ body {
     font-family: 'Microsoft Yahei', 'simsun', 'arial', 'tahoma';
     color: #222;
     background: #eee;
+    width: 100%;
+    height: 100%;
 }
 
 table {
@@ -111,6 +113,7 @@ textarea {
 fieldset,
 img {
     border: 0;
+    width: 100%;
 }
 
 a {
