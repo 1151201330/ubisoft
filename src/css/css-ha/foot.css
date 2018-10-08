@@ -126,6 +126,15 @@
     margin-bottom: 10px;
 }
 
+.copyright>p:nth-of-type(3) img {
+    width: 46px;
+}
+
 .copyright>p:nth-of-type(4) {
     padding: 20px 0;
+}
+
+.copyright>p:nth-of-type(4) img {
+    width: 20px;
+    margin-right: 5px;
 }
