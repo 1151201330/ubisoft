@@ -8,5 +8,8 @@
 #pwd,
 #create {
     width: 400px;
-    color: #fff;
+}
+
+#myspan {
+    color: red;
 }

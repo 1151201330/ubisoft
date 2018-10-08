@@ -8,9 +8,9 @@
     <title>document</title>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
-<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <style>
         .row {
             width: 600px;
@@ -23,7 +23,6 @@
         #pwd,
         #uname {
             width: 400px;
-            color: #fff;
         }
         
         select {
@@ -36,6 +35,13 @@
             display: inline-block;
             margin-left: 200px;
         }
+        
+        #myspan,
+        #tagain,
+        #checkpwd,
+        #checkname {
+            color: red;
+        }
     </style>
 </head>
 
@@ -47,23 +53,23 @@
             </div>
             <h2>创建一个 Ubisoft 账号</h2>
             邮箱： <br>
-            <input id="email" type="text"> <br><br> 确认你的邮箱地址： <br>
-            <input id="again" type="text"> <br><br>密码：<br>
-            <input id="pwd" type="password"><br><br> Ubisoft 用户名：
+            <input id="email" type="text"> <br><span id="myspan"></span> <br> 确认你的邮箱地址： <br>
+            <input id="again" type="text"> <br><span id="tagain"></span> <br>密码：<br>
+            <input id="pwd" type="password" placeholder="密码长度8-16个字符之间，区分大小写"><br><span id="checkpwd"></span> <br> Ubisoft 用户名：
             <br>
-            <input id="uname" type="password"><br><br> 生日：
+            <input id="uname" type="text" placeholder="用户名3-15个字符之间"><br><span id="checkname"></span> <br> 生日：
             <br>
             <select name="" id="">
                <option value="" >日</option>
-               <option value="">1</option>
-               <option value="">2</option>
-               <option value="">3</option>
-               <option value="">4</option>
-               <option value="">5</option>
-               <option value="">6</option>
-               <option value="">7</option>
-               <option value="">8</option>
-               <option value="">9</option>
+               <option value="">01</option>
+               <option value="">02</option>
+               <option value="">03</option>
+               <option value="">04</option>
+               <option value="">05</option>
+               <option value="">06</option>
+               <option value="">07</option>
+               <option value="">08</option>
+               <option value="">09</option>
                <option value="">10</option>
                <option value="">11</option>
                <option value="">12</option>
@@ -90,15 +96,15 @@
 
             <select name="" id="">
                 <option value="" >月</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+                <option value="">05</option>
+                <option value="">06</option>
+                <option value="">07</option>
+                <option value="">08</option>
+                <option value="">09</option>
                 <option value="">10</option>
                 <option value="">11</option>
                 <option value="">12</option>
@@ -143,6 +149,7 @@
     </div>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/js-lzq/reg.js"></script>
 </body>
 
 </html>
