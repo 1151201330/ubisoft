@@ -120,7 +120,7 @@
             <div class="option">
                 <ul id="myTabs" class="nav nav-tabs" role="tablist" style="border: none">
                     <li class="dropdown gameselect active" role="presentation">
-                        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-target="#" data-toggle="dropdown" role="button" aria-expanded="false">游戏
+                        <a id="myTabDrop1" class="dropdown-toggle" data-target="#" data-toggle="dropdown" role="button">游戏
                             <span class="current-game">单机游戏</span>
                             <span class="caret"></span>
                         </a>
@@ -372,6 +372,13 @@
     </div>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('.dropdown').click(function() {
+                $('.dropdown-menu').toggleClass("open");
+            });
+        })
+    </script>
 </body>
 
 </html>

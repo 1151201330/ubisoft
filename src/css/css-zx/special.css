@@ -384,6 +384,13 @@ p {
         margin: 5px;
     }
     /* 下一个div */
+    .gameselect>.dropdown-menu>.active>a {
+        color: #FFF;
+        background-color: #3e61ad;
+        line-height: 50px;
+        padding: 0px;
+        border-bottom: solid 1px #404040;
+    }
     .faq-wrap {
         padding: 20px;
         width: 100%;
@@ -428,13 +435,18 @@ p {
         border: none;
         min-width: 100%;
     }
-    .gameselect>.dropdown-menu>.active>a {
+    .gameselect>.dropdown-menu>li>a {
+        line-height: 50px;
+        padding: 0px;
+        border-bottom: solid 1px #404040;
+    }
+    /* .gameselect>.dropdown-menu>.active>a {
         color: #FFF;
         background-color: #3e61ad;
         line-height: 50px;
         padding: 0px;
         border-bottom: solid 1px #404040;
-    }
+    } */
     .panel-group .faq-panel {
         box-shadow: none;
         border-radius: 0px;
@@ -470,5 +482,8 @@ p {
     }
     .collapsed:hover {
         color: #888;
+    }
+    .open {
+        display: block;
     }
 }
