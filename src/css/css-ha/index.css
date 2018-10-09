@@ -451,6 +451,12 @@ body .player>.ubi-title>a:nth-of-type(2) {
     font-weight: 900;
 }
 
+@media (max-width:374px) {
+    .ubi-title>a:nth-of-type(2) {
+        display: none;
+    }
+}
+
 body .player-content {
     margin: 20px 0;
     background: #fff;

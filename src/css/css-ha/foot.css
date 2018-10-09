@@ -2,14 +2,14 @@
 
 /* footer */
 
-.footer {
+body .footer {
     background-color: #000;
     color: #999999;
     text-align: center;
     padding: 30px 0;
 }
 
-.wechat {
+body .wechat {
     padding: 40px 0 20px;
     border-bottom: solid 1px #404040;
     border-top: solid 1px #404040;
@@ -30,7 +30,7 @@
     height: auto;
 }
 
-.wechat-code {
+body .wechat-code {
     display: none;
     width: 280px;
     height: 280px;
@@ -85,11 +85,11 @@
 
 /* language */
 
-.language {
+body .language {
     padding-top: 30px;
 }
 
-.language-btn {
+body .language-btn {
     padding: 8px;
     color: #999;
     background-color: #393939;
@@ -107,7 +107,7 @@
 
 /* about */
 
-.about {
+body .about {
     padding-top: 30px;
 }
 
@@ -118,7 +118,7 @@
 
 /* copyright */
 
-.copyright {
+body .copyright {
     padding: 10px 0;
 }
 
