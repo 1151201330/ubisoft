@@ -181,14 +181,5 @@ $(function() {
         } else {
             $('.box').css("border", "1px solid red");
         };
-
-
-
     })
-
-
-
-
-
-
 })
