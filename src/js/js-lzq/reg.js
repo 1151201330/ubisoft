@@ -50,7 +50,7 @@ $(function() {
                     "background-color": "pink"
                 })　　
             } else if (this.value !== $('#email').value) {
-                tagain.innerText = "邮箱地址不匹配。";　
+                tagain.innerText = "邮箱地址不一致。";　
                 var hh = document.createElement('br');
                 $('#tagain').append(hh);　
                 $('#again').css({
@@ -77,7 +77,7 @@ $(function() {
                     })　　
 
                 } else if (this.value !== $('#email').value) {
-                    tagain.innerText = "邮箱地址不匹配。";　
+                    tagain.innerText = "邮箱地址不一致。";　
                     var hh = document.createElement('br');
                     $('#tagain').append(hh);　
                     $('#again').css({
@@ -109,6 +109,35 @@ $(function() {
                 "background-color": "pink"
             })　
         }
+    })
+
+    // 注册
+    $('#create').on('click', function() {
+        // if ($('#check' == "checked")) {
+        //     $('#check').css("boder-color", "red");
+
+        // }
+        $.ajax({
+            type: "post",
+            url: "../php/php-lzq/reg.php",
+            data: {
+                "email": $('#email').val(),
+                "pwd": $('#pwd').val(),
+                "uname": $('#uname').val(),
+                "birthday": $('#year').val() + $('#month').val() + $('#day').val()
+            },
+            // dataType: "dataType",
+            success: function(data) {
+                if (data == "lzq-login.html") {
+                    location.href = data;
+                } else {
+                    myspan.innerText = data;
+                    var hh = document.createElement('br');
+                    $('#myspan').append(hh);
+                }
+            }
+        });
+
     })
 
 

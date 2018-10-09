@@ -10,6 +10,7 @@
     width: 400px;
 }
 
-#myspan {
+#myspan,
+#span {
     color: red;
 }

@@ -10,7 +10,6 @@ $(function() {
                     "border-color": "red",
                     "background-color": "pink"
                 })
-
             }
             $('#email').keyup(function() {
                 var myReg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;　　
@@ -28,7 +27,6 @@ $(function() {
                         "border-color": "red",
                         "background-color": "pink"
                     })
-
                 }
             })
         })
@@ -36,18 +34,24 @@ $(function() {
     $('#enter').on('click', function() {
         $.ajax({
             type: "post",
-            url: "../php/php-lzq/reg.php",
+            url: "../php/php-lzq/login.php",
             data: {
-                "email": $(this).val(),
-                "pwd": $(this).val()
+                "email": $('#email').val(),
+                "pwd": $('#pwd').val()
             },
             //  dataType: "dataType",
-            success: function(response) {
-
+            success: function(data) {
+                if (data == "lzq-register.html") {
+                    location.href = data;
+                } else {
+                    span.innerText = data;
+                    var hh = document.createElement('br');
+                    $('#span').append(hh);
+                }
             }
         });
     })
     $('#create').on('click', function() {
-        location.href = "lzq-register.html"
+        location.href = "lzq-register.html";
     })
 })

@@ -1,3 +1,44 @@
+/* banner */
+
+.banner {
+    margin-top: 50px;
+    height: 410px;
+    vertical-align: middle;
+    background: url(../../images/images-lzq/news_hero.jpg);
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-style: italic
+    /* margin-top: 60px; */
+    /* display: inline-block; */
+}
+
+.banner h3 {
+    font-size: 14px;
+}
+
+.circle {
+    padding-top: 60px;
+    width: 308px;
+    height: 308px;
+    border-radius: 50%;
+    background: #4769b2;
+    opacity: 0.8;
+    margin-top: 40px;
+    margin-left: 50px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.circle .glyphicon {
+    font-size: 35px;
+}
+
+
+/* banner结束 */
+
+
 /* 搜索栏 */
 
 .box {
@@ -5,7 +46,7 @@
     padding: 15px;
 }
 
-.type {
+body .type {
     padding: 0;
 }
 
@@ -156,6 +197,10 @@
     margin-top: 5px;
 }
 
+.content a:hover {
+    color: #fff;
+}
+
 .content .date {
     color: #565656;
     font-weight: bold;
@@ -166,7 +211,7 @@
     color: #969696;
     text-overflow: ellipsis;
     overflow: hidden;
-    height: 50px;
+    height: 54px;
 }
 
 .part .title {
@@ -179,6 +224,12 @@
 /* 移动端，超小屏幕 */
 
 @media (max-width: 991px) {
+    .banner {
+        display: none;
+    }
+    .type {
+        margin-top: 50px;
+    }
     .drop,
     .drop2 {
         /* position: absolute; */
@@ -246,10 +297,12 @@
         padding-left: 15px
     }
     .content p {
+        line-height: 1.5;
         font-size: 12px;
         text-overflow: ellipsis;
         overflow: hidden;
-        height: 52px;
+        height: 53px;
+        margin-bottom: 8px;
     }
 }
 
@@ -278,7 +331,6 @@
     }
     .content .right {
         background: #000;
-        /* height: 143px; */
     }
     .content .part {
         padding: 15px;
@@ -293,6 +345,6 @@
 @media (min-width: 1201px) {
     .content .right {
         background: #000;
-        height: 143px;
+        height: 141px;
     }
 }

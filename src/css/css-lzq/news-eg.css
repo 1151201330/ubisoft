@@ -185,9 +185,8 @@ body {
     padding-left: 20px;
 }
 
-.more {
+.news .more {
     padding: 0;
-    /* padding-left: 15px; */
     text-indent: 15px;
     height: 50px;
     line-height: 50px;
@@ -356,6 +355,9 @@ legend {
 /* 移动端，超小屏幕 */
 
 @media (max-width: 991px) {
+    .top {
+        display: none;
+    }
     .drop,
     .drop2 {
         /* position: absolute; */

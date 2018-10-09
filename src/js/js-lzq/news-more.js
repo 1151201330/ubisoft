@@ -1,4 +1,5 @@
 $(function() {
+    $('.top').load('http://10.31.157.13:8080/project-lzq/ubisoft/src/html/head-ha.html');
     $(document).on('click', function(ev) {
         if (ev.target == $('.platform')[0]) {
             $('.drop').addClass('show');
