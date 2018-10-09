@@ -221,6 +221,49 @@ body .type {
 }
 
 
+/* content结束 */
+
+.box2 {
+    background: #3f3f3f;
+}
+
+.page {
+    background: #000;
+    margin-top: 15px;
+    height: 100px;
+    padding: 20px 0;
+}
+
+.to_left,
+.to_right {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.to_right {
+    background: #252525;
+    color: #fff;
+    padding: 0;
+    overflow: hidden;
+}
+
+.page a {
+    color: #fff;
+    padding: 0 5px;
+}
+
+.page .act {
+    color: #969696;
+}
+
+.page a,
+.to_left,
+.to_right {
+    display: inline-block;
+    line-height: 60px;
+}
+
+
 /* 移动端，超小屏幕 */
 
 @media (max-width: 991px) {
@@ -303,6 +346,9 @@ body .type {
         overflow: hidden;
         height: 53px;
         margin-bottom: 8px;
+    }
+    .page .hid {
+        display: none;
     }
 }
 
