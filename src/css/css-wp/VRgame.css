@@ -33,6 +33,7 @@ html,
 body,
 {
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -75,8 +76,6 @@ body,
     }
     /* 轮播图上的左右控制 */
     .carousel-control {
-        width: 0!important;
-        height: 0!important;
         top: 50%;
     }
     .carousel .glyphicon-chevron-left {
@@ -160,7 +159,7 @@ body,
         line-height: 1px;
         font-size: 14px;
         position: relative;
-        width: 89px;
+        width: 101px;
         height: 14px;
         border-bottom: 1px solid white;
         border-top: 1px solid white;
@@ -190,6 +189,9 @@ body,
         position: relative;
         text-align: center;
         width: 410px;
+    }
+    .carousel .carousel-inner>div .circle-word h1 i {
+        font-style: italic!important;
     }
     .carousel .carousel-inner>div .circle-word h3 {
         width: 410px;
@@ -242,7 +244,7 @@ body,
     .carous .mouse {
         cursor: pointer;
         position: absolute;
-        top: 642px;
+        top: 592px;
         left: 50%;
         line-height: 60px;
         text-align: center;
@@ -578,8 +580,6 @@ body,
     }
     /* 轮播图左右控制键 */
     .carousel-control {
-        width: 0!important;
-        height: 0!important;
         top: 50%;
     }
     .carousel .glyphicon-chevron-left {
@@ -626,7 +626,7 @@ body,
         line-height: 1px;
         font-size: 14px;
         position: relative;
-        width: 89px;
+        width: 101px;
         height: 14px;
         border-bottom: 1px solid white;
         border-top: 1px solid white;
@@ -656,6 +656,9 @@ body,
         position: relative;
         text-align: center;
         width: 410px;
+    }
+    .carousel .carousel-inner>div .circle-word h1 i {
+        font-style: italic!important;
     }
     .circle-wrap .circle .circle-word a {
         padding: 18px 0px;
@@ -1010,8 +1013,6 @@ body,
     }
     /* 轮播图左右控制键 */
     .carousel-control {
-        width: 0!important;
-        height: 0!important;
         top: 50%;
     }
     .carousel .glyphicon-chevron-left {
@@ -1057,7 +1058,7 @@ body,
         line-height: 1px;
         font-size: 14px;
         position: relative;
-        width: 89px;
+        width: 101px;
         height: 14px;
         border-bottom: 1px solid white;
         border-top: 1px solid white;
@@ -1083,6 +1084,9 @@ body,
         margin: 15px 0;
         font-size: 28px;
         line-height: 28px;
+    }
+    .carousel .carousel-inner>div .circle-word h1 i {
+        font-style: italic!important;
     }
     .circle-wrap .circle .circle-word a {
         padding: 18px 0px;

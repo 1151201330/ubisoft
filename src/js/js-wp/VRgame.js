@@ -5,9 +5,9 @@ window.onload = function() {
     // 鼠标跳动
     var show = function() {
         $('.mouse').animate({
-            'top': '600px'
+            'top': '550px'
         }, 1000).animate({
-            'top': '642px'
+            'top': '592px'
         }, 1000);
     }
     setInterval(show, 0);

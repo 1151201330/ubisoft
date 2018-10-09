@@ -32,6 +32,7 @@
     body,
     {
         width: 100%;
+        overflow-x: hidden;
     }
     /* 轮播图样式 */
     
@@ -40,8 +41,8 @@
         /* 轮播图 */
         .carous {
             margin-top: 50px!important;
-            padding: 0;
-            margin: 0;
+            padding: 0!important;
+            margin: 0!important;
         }
         .carousel .carousel-inner {
             height: 665px;
@@ -72,8 +73,6 @@
         }
         /* 轮播图上的左右控制 */
         .carousel-control {
-            width: 0!important;
-            height: 0!important;
             top: 50%;
         }
         .carousel .glyphicon-chevron-left {
@@ -217,6 +216,9 @@
             text-align: center;
             width: 410px;
         }
+        .carousel .carousel-inner>div .circle-word h1 i {
+            font-style: italic!important;
+        }
         .carousel .carousel-inner>div .circle-word h3 {
             width: 410px;
             font-size: 14px;
@@ -268,7 +270,7 @@
         .carous .mouse {
             cursor: pointer;
             position: absolute;
-            top: 642px;
+            top: 592px;
             left: 50%;
             line-height: 60px;
             text-align: center;
@@ -525,6 +527,9 @@
             height: 60px;
             padding: 0px;
         }
+        .media-wrap>.row>div {
+            padding: 0!important;
+        }
         .media-wrap>.row>div .caption h3 {
             width: 100%;
             height: 60px;
@@ -606,7 +611,7 @@
         /* 轮播图 */
         .carous {
             margin-top: 50px!important;
-            padding: 0;
+            padding: 0!important;
             margin: 0;
         }
         .carousel .carousel-inner {
@@ -668,8 +673,6 @@
         }
         /* 轮播图左右控制键 */
         .carousel-control {
-            width: 0!important;
-            height: 0!important;
             top: 50%;
         }
         .carousel .glyphicon-chevron-left {
@@ -760,6 +763,9 @@
             text-align: center;
             width: 768px;
             left: -206px;
+        }
+        .carousel .carousel-inner>div .circle-word h1 i {
+            font-style: italic!important;
         }
         .circle-wrap .circle .circle-word a {
             padding: 18px 0px;
@@ -1031,6 +1037,9 @@
             background: #0C65DB;
             height: 256px;
         }
+        .media-wrap>.row>div {
+            padding: 0!important;
+        }
         .media-wrap>.row>div>a>img {
             width: 100%;
             height: 256px!important;
@@ -1124,7 +1133,7 @@
         /* 轮播图 */
         .carous {
             margin-top: 50px!important;
-            padding: 0;
+            padding: 0!important;
             margin: 0;
         }
         .carousel .carousel-inner {
@@ -1277,6 +1286,9 @@
             text-align: center;
             width: 270px;
             margin: 0 auto;
+        }
+        .carousel .carousel-inner>div .circle-word h1 i {
+            font-style: italic!important;
         }
         .circle-wrap .circle .circle-word a {
             padding: 18px 0px;
@@ -1556,6 +1568,9 @@
         .media-wrap>.row>div {
             background: #0C65DB;
             height: 125px!important;
+        }
+        .media-wrap>.row>div {
+            padding: 0!important;
         }
         .media-wrap>.row>div>a>img {
             width: 100%;

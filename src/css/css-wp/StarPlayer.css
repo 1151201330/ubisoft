@@ -35,6 +35,7 @@
         body,
         {
             width: 100%;
+            overflow-x: hidden;
         }
         /* 当宽度大于991的样式 */
         /* 玩家头像及爱好 */
