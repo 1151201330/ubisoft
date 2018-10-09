@@ -14,9 +14,9 @@ body {
     display: none;
 }
 
-.banner h1 {
+.banner .circle h1 {
     font-size: 48px;
-    font-style: italic
+    font-style: italic;
     /* margin-top: 60px; */
     /* display: inline-block; */
 }
