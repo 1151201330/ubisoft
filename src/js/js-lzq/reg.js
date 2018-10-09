@@ -113,30 +113,76 @@ $(function() {
 
     // 注册
     $('#create').on('click', function() {
-        // if ($('#check' == "checked")) {
-        //     $('#check').css("boder-color", "red");
+        if ($('#email').val() == "") {
+            myspan.innerText = "需要邮箱";
+            var hh = document.createElement('br');
+            $('#myspan').append(hh);
+            $('#email').css({
+                "border-color": "red",
+                "background-color": "pink"
+            });
+        }
 
+        // if ($('#uname').val() == "") {
+        //     checkname.innerText = "需要用户名";
+        //     var hh = document.createElement('br');
+        //     $('#checkname').append(hh);
+        //     $('#uname').css({
+        //         "border-color": "red",
+        //         "background-color": "pink"
+        //     })
         // }
-        $.ajax({
-            type: "post",
-            url: "../php/php-lzq/reg.php",
-            data: {
-                "email": $('#email').val(),
-                "pwd": $('#pwd').val(),
-                "uname": $('#uname').val(),
-                "birthday": $('#year').val() + $('#month').val() + $('#day').val()
-            },
-            // dataType: "dataType",
-            success: function(data) {
-                if (data == "lzq-login.html") {
-                    location.href = data;
-                } else {
-                    myspan.innerText = data;
-                    var hh = document.createElement('br');
-                    $('#myspan').append(hh);
+        if ($('#again').val() == "") {
+            tagain.innerText = "需要邮箱";
+            var hh = document.createElement('br');
+            $('#tagain').append(hh);
+            $('#again').css({
+                "border-color": "red",
+                "background-color": "pink"
+            })
+        }
+        if ($('#pwd').val() == "") {
+            checkpwd.innerText = "需要密码";
+            var hh = document.createElement('br');
+            $('#checkpwd').append(hh);
+            $('#pwd').css({
+                "border-color": "red",
+                "background-color": "pink"
+            })
+        }
+
+        // if (($('#day').val() == "日") && ($('#month').val() == "月") && ($('#year').val() == "年")) {
+        //     checkday.innerText = "需要生日";
+        //     var hh = document.createElement('br');
+        //     $('#checkday').append(hh);
+        // }
+        if (check.checked) {
+            $('.box').css("border", "");
+            $.ajax({
+                type: "post",
+                url: "../php/php-lzq/reg.php",
+                data: {
+                    "email": $('#email').val(),
+                    "pwd": $('#pwd').val(),
+                    "uname": $('#uname').val(),
+                    "birthday": $('#year').val() + $('#month').val() + $('#day').val()
+                },
+                // dataType: "dataType",
+                success: function(data) {
+                    if (data == "lzq-login.html") {
+                        location.href = data;
+                    } else {
+                        myspan.innerText = data;
+                        var hh = document.createElement('br');
+                        $('#myspan').append(hh);
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            $('.box').css("border", "1px solid red");
+        };
+
+
 
     })
 

@@ -8,6 +8,8 @@
 
   $email = $_REQUEST["email"];
   $pwd = $_REQUEST["pwd"];
+
+  
   $sql2 = "SELECT * FROM `ubisoft_register` WHERE (`reg_email`='$email' AND `reg_pwd`='$pwd')";
   $data = mysql_query($sql2);
   $result = mysql_fetch_array($data); //将查询结果提取成数组

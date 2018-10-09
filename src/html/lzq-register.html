@@ -39,8 +39,19 @@
         #myspan,
         #tagain,
         #checkpwd,
-        #checkname {
+        #checkname,
+        #checkday {
             color: red;
+        }
+        
+        #check {
+            margin: 0;
+        }
+        
+        .box {
+            width: 15px;
+            height: 17px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -139,9 +150,12 @@
                 <option value="1990">1990</option>
                 <option value="1989">1989</option>
                 <option value="1988">1988</option>
-            </select><br><br>
-            <input type="checkbox" id="check">我接受育碧的使用条款,销售条款和隐私政策。<br>
-            <input type="checkbox">與指定第三方分享我的資訊。<br><br>
+            </select><br>
+            <span id="checkday"></span><br>
+            <span class="box">
+                <input type="checkbox" id="check">
+            </span>我接受育碧的使用条款,销售条款和隐私政策。<br>
+            <input type="checkbox" id="check2">與指定第三方分享我的資訊。<br><br>
 
             <input id="create" type="button" class="btn btn-primary" value="创建Ubisoft账号">
             <span class="cancel"><a href="">取消</a></span>
