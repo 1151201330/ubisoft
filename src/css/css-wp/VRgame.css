@@ -36,6 +36,10 @@ body,
     overflow-x: hidden;
 }
 
+.row {
+    margin: 0!important;
+}
+
 
 /* 轮播图样式 */
 
