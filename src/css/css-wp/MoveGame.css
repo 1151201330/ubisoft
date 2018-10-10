@@ -986,6 +986,10 @@
             background-color: black;
             color: #969696;
         }
+        .game-overview-wrap .game-overview ul li .icon {
+            width: 30px!important;
+            height: 30px!important;
+        }
         .game-overview-wrap .game-overview ul li .icon-jiahao {
             font-size: 30px;
             float: right;
@@ -1511,6 +1515,10 @@
         .unchange2 {
             background-color: black;
             color: #969696;
+        }
+        .game-overview-wrap .game-overview ul li .icon {
+            width: 30px!important;
+            height: 30px!important;
         }
         .game-overview-wrap .game-overview ul li .icon-jiahao {
             font-size: 30px;
