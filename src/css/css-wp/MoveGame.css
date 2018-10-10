@@ -386,6 +386,7 @@
             border-bottom: 1px solid black;
             text-align: center;
             margin-top: 20px;
+            margin-bottom: 20px;
         }
         .news-wrap .newsmore a {
             color: #666;
@@ -410,7 +411,6 @@
             padding: 50px;
             position: relative;
             background: #fff;
-            min-height: 580px;
             border-bottom: 40px solid black;
         }
         .game-overview-wrap .game-specs {
@@ -421,6 +421,7 @@
             max-width: 290px;
             z-index: 100;
             position: inherit;
+            background: white;
         }
         .game-overview-wrap .game-specs .box-art {
             width: 100%;
@@ -561,7 +562,7 @@
             background-color: #0C65DB;
             position: absolute;
             right: 20px;
-            top: 15px;
+            top: -44px;
             width: 30px;
             height: 30px;
             font-size: 18px;
@@ -896,6 +897,7 @@
             border-bottom: 1px solid black;
             text-align: center;
             margin-top: 20px;
+            margin-bottom: 20px;
         }
         .news-wrap .newsmore a {
             color: #666;
@@ -920,7 +922,6 @@
             width: 100%;
             position: relative;
             background: #fff;
-            min-height: 580px;
             margin-top: 50px;
         }
         .game-overview-wrap .game-specs {
@@ -929,6 +930,7 @@
             width: 100%;
             z-index: 100;
             position: inherit;
+            background: white;
         }
         .game-overview-wrap .game-specs .box-art {
             width: 40%;
@@ -1043,6 +1045,7 @@
             position: relative;
             background: #000;
             float: left;
+            border-bottom: 40px solid black;
         }
         .media-wrap .ubi-title {
             background-color: #0C65DB;
@@ -1458,6 +1461,7 @@
             width: 100%;
             z-index: 100;
             position: inherit;
+            background: white;
         }
         .game-overview-wrap .game-specs .box-art {
             width: 40%;
@@ -1581,6 +1585,7 @@
             position: relative;
             background: #000;
             float: left;
+            border-bottom: 40px solid black;
         }
         .media-wrap .ubi-title {
             background-color: #0C65DB;

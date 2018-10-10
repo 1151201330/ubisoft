@@ -894,6 +894,8 @@ body,
     .media-wrap {
         position: relative;
         float: left;
+        border-bottom: 40px solid black;
+        background: #000;
     }
     .media-wrap .ubi-title {
         background-color: #c00705;
@@ -1246,6 +1248,9 @@ body,
         text-align: left;
         margin-left: 30px;
     }
+    .game-overview-wrap .game-specs {
+        background: white;
+    }
     .game-overview-wrap .game-specs dt {
         width: 27%;
         font-size: 11px;
@@ -1328,6 +1333,8 @@ body,
     .media-wrap {
         position: relative;
         float: left;
+        border-bottom: 40px solid black;
+        background: #000;
     }
     .media-wrap .ubi-title {
         background-color: #c00705;
@@ -1346,7 +1353,6 @@ body,
     }
     .media-wrap>.row>div .caption {
         position: absolute;
-        ;
         bottom: 0px;
         color: #ffffff;
         width: 100%;
