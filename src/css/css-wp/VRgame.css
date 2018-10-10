@@ -1333,6 +1333,7 @@ body,
         position: relative;
         border-bottom: 40px solid black;
         background: #000;
+        float: left;
     }
     .media-wrap .ubi-title {
         background-color: #c00705;
