@@ -165,12 +165,17 @@ body .search-show-result {
     background-color: #000;
     display: none;
     overflow-y: auto;
-    padding: 13px 0;
+    padding: 13px 10px;
     position: absolute;
     top: 95px;
     right: 0;
     width: 100%;
     z-index: 15;
+    cursor: pointer;
+    color: #9d9d9d;
+    line-height: 2;
+    list-style: none;
+    font-size: 16px;
 }
 
 

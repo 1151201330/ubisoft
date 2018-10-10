@@ -213,6 +213,12 @@ body .plans-content {
     overflow: hidden;
 }
 
+@media (min-width: 1024px) {
+    body .plans-content {
+        padding-bottom: 55px;
+    }
+}
+
 @media (max-width: 767px) {
     body .plans-content {
         margin: 0px;
@@ -381,6 +387,12 @@ body .game-item-content {
     padding: 9px;
     min-height: 140px;
     background-color: white;
+}
+
+@media (width:1024px) {
+    body .game-item-content {
+        min-height: 235px;
+    }
 }
 
 .game-item-content>h3>a {
