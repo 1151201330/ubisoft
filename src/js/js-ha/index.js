@@ -17,15 +17,6 @@ var intervalId = setInterval(function() {
     var vheight = $('.videos-item').height();
     $('.videos-more>a').css('height', vheight + 'px')
 
-
-    if ($('body').width() > 991) {
-        var pheight1 = $('.news').height();
-        $('.plans-content').css('height', (pheight1 - 42) + 'px');
-    } else {
-        var pheight2 = ('.plans-inner').height();
-        $('.plans-content').css('height', (pheight2 + 20) + 'px');
-    }
-
 }, 100);
 
 //加载头部尾部
