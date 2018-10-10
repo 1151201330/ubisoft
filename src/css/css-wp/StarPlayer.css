@@ -24,6 +24,13 @@
             padding: 0;
         }
         
+        .col-xs-4,
+        .col-md-3,
+        .col-sm-12,
+        .row {
+            padding: 0!important;
+        }
+        
         .container-fluid {
             padding: 0!important;
         }

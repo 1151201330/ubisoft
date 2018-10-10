@@ -20,7 +20,14 @@ a,
 .col-sm-12,
 .row {
     margin: 0;
-    padding: 0;
+    padding: 0!important;
+}
+
+.col-xs-4,
+.col-md-3,
+.col-sm-12,
+.row {
+    padding: 0!important;
 }
 
 .container-fluid {
@@ -851,8 +858,8 @@ body,
         color: #969696;
     }
     .game-overview-wrap .game-overview ul li .icon {
-        width: 30px!important;
-        height: 30px!important;
+        width: 60px!important;
+        height: 50px!important;
     }
     .game-overview-wrap .game-overview ul li .icon-jiahao {
         font-size: 30px;
@@ -1284,8 +1291,8 @@ body,
         color: #969696;
     }
     .game-overview-wrap .game-overview ul li .icon {
-        width: 30px!important;
-        height: 30px!important;
+        width: 60px!important;
+        height: 50px!important;
     }
     .game-overview-wrap .game-overview ul li .icon-jiahao {
         font-size: 30px;
