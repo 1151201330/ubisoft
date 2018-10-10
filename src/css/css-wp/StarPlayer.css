@@ -24,6 +24,10 @@
             padding: 0;
         }
         
+        .col-md-4 {
+            margin: 0!important;
+        }
+        
         .col-xs-4,
         .col-md-3,
         .col-sm-12,
@@ -31,8 +35,8 @@
             padding: 0!important;
         }
         
-        .container-fluid {
-            padding: 0!important;
+        .row {
+            margin: 0!important;
         }
         
         a,
@@ -278,6 +282,7 @@
         .container-fluid2 .row .player-content-bg .latestArticle .news-bg2 {
             padding: 15px 0;
             border-bottom: 1px solid #eee;
+            margin-top: 15px;
         }
         
         .container-fluid2 .row .player-content-bg .latestArticle .news-bg2 img {

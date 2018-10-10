@@ -411,6 +411,7 @@
             padding: 50px;
             position: relative;
             background: #fff;
+            min-height: 586px;
             border-bottom: 40px solid black;
         }
         .game-overview-wrap .game-specs {
