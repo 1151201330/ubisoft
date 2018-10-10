@@ -15,4 +15,6 @@ $(function() {
             $('.drop2').removeClass('show');
         }
     })
+    $('.btm').load('http://10.31.157.13:8080/project-lzq/ubisoft/src/html/foot-ha.html');
+
 })

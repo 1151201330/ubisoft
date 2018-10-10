@@ -31,6 +31,7 @@ $(function() {
             })
         })
         // 登录
+
     $('#enter').on('click', function() {
         $.ajax({
             type: "post",
@@ -49,6 +50,7 @@ $(function() {
                     $('#span').append(hh);
                 }
             }
+
         });
     })
     $('#create').on('click', function() {

@@ -238,6 +238,7 @@ body .type {
 .to_right {
     font-size: 30px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .to_right {
@@ -252,6 +253,10 @@ body .type {
     padding: 0 5px;
 }
 
+.page a:hover {
+    color: #fff;
+}
+
 .page .act {
     color: #969696;
 }
@@ -261,6 +266,10 @@ body .type {
 .to_right {
     display: inline-block;
     line-height: 60px;
+}
+
+.to_right:hover {
+    background: #666;
 }
 
 
