@@ -396,7 +396,7 @@
         .product-promotion {
             border: 50px solid #000;
             width: 100%;
-            height: 400px;
+            height: 550px;
         }
         .product-promotion a {
             width: 100%;
@@ -411,6 +411,7 @@
             position: relative;
             background: #fff;
             min-height: 580px;
+            border-bottom: 40px solid black;
         }
         .game-overview-wrap .game-specs {
             float: left;
@@ -531,7 +532,7 @@
             width: 100%;
         }
         .media-wrap>.row>div .caption {
-            position: absolute;
+            position: relative;
             bottom: 0px;
             color: #ffffff;
             width: 100%;
@@ -554,6 +555,7 @@
             font-size: 14px;
             background: #000;
             opacity: 0.85;
+            top: -20px;
         }
         .media-wrap>.row>div .caption .media-ico {
             background-color: #0C65DB;
@@ -904,7 +906,7 @@
         .product-promotion {
             border: 50px solid #000;
             width: 100%;
-            height: 400px;
+            height: 550px;
         }
         .product-promotion a {
             width: 100%;
@@ -1039,8 +1041,8 @@
         /* 视觉 */
         .media-wrap {
             position: relative;
-            float: left;
             background: #000;
+            border-bottom: 40px solid black;
         }
         .media-wrap .ubi-title {
             background-color: #0C65DB;
@@ -1066,7 +1068,7 @@
             height: 256px!important;
         }
         .media-wrap>.row>div .caption {
-            position: absolute;
+            position: relative;
             bottom: 0px;
             color: #ffffff;
             width: 100%;
@@ -1083,6 +1085,8 @@
             font-size: 14px;
             background: #000;
             opacity: 0.85;
+            top: -20px;
+            left: 0;
         }
         .media-wrap>.row>div .caption .media-ico {
             background-color: #0C65DB;
@@ -1578,8 +1582,8 @@
         /* 视觉 */
         .media-wrap {
             position: relative;
-            float: left;
             background: #000;
+            border-bottom: 40px solid black;
         }
         .media-wrap .ubi-title {
             background-color: #0C65DB;
@@ -1605,7 +1609,7 @@
             height: 125px!important;
         }
         .media-wrap>.row>div .caption {
-            position: absolute;
+            position: relative;
             bottom: 0px;
             color: #ffffff;
             width: 100%;
@@ -1622,6 +1626,8 @@
             font-size: 14px;
             background: #000;
             opacity: 0.85;
+            top: -20px;
+            left: 0;
         }
         .media-wrap>.row>div .caption .media-ico {
             background-color: #0C65DB;

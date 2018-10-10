@@ -451,6 +451,7 @@ body,
     /* 视觉 */
     .media-wrap {
         position: relative;
+        border-bottom: 40px solid black;
     }
     .media-wrap .ubi-title {
         background-color: #c00705;
@@ -469,7 +470,7 @@ body,
         padding: 0!important;
     }
     .media-wrap>.row>div .caption {
-        position: absolute;
+        position: relative;
         bottom: 0px;
         color: #ffffff;
         width: 100%;
@@ -486,6 +487,8 @@ body,
         font-size: 14px;
         background: #000;
         opacity: 0.85;
+        top: -20px;
+        left: 0;
     }
     .media-wrap>.row>div .caption .media-ico {
         background-color: #c00705;
@@ -888,7 +891,7 @@ body,
     /* 视觉 */
     .media-wrap {
         position: relative;
-        float: left;
+        border-bottom: 40px solid black;
     }
     .media-wrap .ubi-title {
         background-color: #c00705;
@@ -906,7 +909,7 @@ body,
         padding: 0!important;
     }
     .media-wrap>.row>div .caption {
-        position: absolute;
+        position: relative;
         bottom: 0px;
         color: #ffffff;
         width: 100%;
@@ -923,6 +926,8 @@ body,
         font-size: 14px;
         background: #000;
         opacity: 0.85;
+        top: -20px;
+        left: 0;
     }
     .media-wrap>.row>div .caption .media-ico {
         background-color: #c00705;
@@ -1321,7 +1326,7 @@ body,
     /* 视觉 */
     .media-wrap {
         position: relative;
-        float: left;
+        border-bottom: 40px solid black;
     }
     .media-wrap .ubi-title {
         background-color: #c00705;
@@ -1339,7 +1344,7 @@ body,
         padding: 0!important;
     }
     .media-wrap>.row>div .caption {
-        position: absolute;
+        position: relative;
         bottom: 0px;
         color: #ffffff;
         width: 100%;
@@ -1356,6 +1361,8 @@ body,
         font-size: 14px;
         background: #000;
         opacity: 0.85;
+        top: -20px;
+        left: 0;
     }
     .media-wrap>.row>div .caption .media-ico {
         background-color: #c00705;
