@@ -1224,6 +1224,7 @@ body,
         position: relative;
         background: #fff;
         margin-top: 50px;
+        min-height: 407px;
     }
     .game-overview-wrap .game-specs {
         float: left;
