@@ -518,6 +518,7 @@
             position: relative;
             float: left;
             background: #0C65DB;
+            border-bottom: 40px solid black;
         }
         .media-wrap .ubi-title {
             color: #fff;
@@ -536,7 +537,6 @@
             bottom: 0px;
             color: #ffffff;
             width: 100%;
-            height: 60px;
             padding: 0px;
         }
         .media-wrap>.row {
@@ -555,7 +555,7 @@
             font-size: 14px;
             background: #000;
             opacity: 0.85;
-            top: -20px;
+            top: -44px;
         }
         .media-wrap>.row>div .caption .media-ico {
             background-color: #0C65DB;
@@ -1072,7 +1072,6 @@
             bottom: 0px;
             color: #ffffff;
             width: 100%;
-            height: 60px;
             padding: 0px;
         }
         .media-wrap>.row>div .caption h3 {
@@ -1090,7 +1089,7 @@
             background-color: #0C65DB;
             position: absolute;
             right: 20px;
-            top: 15px;
+            top: -44px;
             width: 30px;
             height: 30px;
             font-size: 18px;
@@ -1608,11 +1607,9 @@
         }
         .media-wrap>.row>div .caption {
             position: absolute;
-            ;
             bottom: 0px;
             color: #ffffff;
             width: 100%;
-            height: 45px;
             padding: 0px;
         }
         .media-wrap>.row>div .caption h3 {
@@ -1630,7 +1627,7 @@
             background-color: #0C65DB;
             position: absolute;
             right: 20px;
-            top: 15px;
+            top: -44px;
             width: 30px;
             height: 30px;
             font-size: 18px;

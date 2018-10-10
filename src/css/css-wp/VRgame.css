@@ -451,7 +451,9 @@ body,
     /* 视觉 */
     .media-wrap {
         position: relative;
+        float: left;
         border-bottom: 40px solid black;
+        background: #000;
     }
     .media-wrap .ubi-title {
         background-color: #c00705;
@@ -494,7 +496,7 @@ body,
         background-color: #c00705;
         position: absolute;
         right: 20px;
-        top: 15px;
+        top: 2px;
         width: 30px;
         height: 30px;
         font-size: 18px;
@@ -785,7 +787,7 @@ body,
         width: 100%;
         position: relative;
         background: #fff;
-        min-height: 580px;
+        min-height: 563px;
         margin-top: 50px;
     }
     .game-overview-wrap .game-specs {
