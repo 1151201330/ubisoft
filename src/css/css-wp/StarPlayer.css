@@ -132,6 +132,7 @@
         .container-fluid2 .row .player-content-bg {
             background-color: #ffffff;
             min-height: 800px;
+            margin-bottom: 40px;
         }
         
         .container-fluid2 .row .player-content-bg header {
