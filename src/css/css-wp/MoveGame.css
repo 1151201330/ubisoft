@@ -412,7 +412,6 @@
             position: relative;
             background: #fff;
             min-height: 586px;
-            border-bottom: 40px solid black;
         }
         .game-overview-wrap .game-specs {
             float: left;
@@ -563,7 +562,7 @@
             background-color: #0C65DB;
             position: absolute;
             right: 20px;
-            top: -44px;
+            top: -34px;
             width: 30px;
             height: 30px;
             font-size: 18px;
@@ -1093,7 +1092,7 @@
             background-color: #0C65DB;
             position: absolute;
             right: 20px;
-            top: -44px;
+            top: -34px;
             width: 30px;
             height: 30px;
             font-size: 18px;
@@ -1633,7 +1632,7 @@
             background-color: #0C65DB;
             position: absolute;
             right: 20px;
-            top: -44px;
+            top: -34px;
             width: 30px;
             height: 30px;
             font-size: 18px;
