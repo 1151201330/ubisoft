@@ -1042,7 +1042,7 @@
         .media-wrap {
             position: relative;
             background: #000;
-            border-bottom: 40px solid black;
+            float: left;
         }
         .media-wrap .ubi-title {
             background-color: #0C65DB;
@@ -1068,7 +1068,7 @@
             height: 256px!important;
         }
         .media-wrap>.row>div .caption {
-            position: relative;
+            position: absolute;
             bottom: 0px;
             color: #ffffff;
             width: 100%;
@@ -1085,8 +1085,6 @@
             font-size: 14px;
             background: #000;
             opacity: 0.85;
-            top: -20px;
-            left: 0;
         }
         .media-wrap>.row>div .caption .media-ico {
             background-color: #0C65DB;
@@ -1583,7 +1581,7 @@
         .media-wrap {
             position: relative;
             background: #000;
-            border-bottom: 40px solid black;
+            float: left;
         }
         .media-wrap .ubi-title {
             background-color: #0C65DB;
@@ -1609,7 +1607,8 @@
             height: 125px!important;
         }
         .media-wrap>.row>div .caption {
-            position: relative;
+            position: absolute;
+            ;
             bottom: 0px;
             color: #ffffff;
             width: 100%;
@@ -1626,8 +1625,6 @@
             font-size: 14px;
             background: #000;
             opacity: 0.85;
-            top: -20px;
-            left: 0;
         }
         .media-wrap>.row>div .caption .media-ico {
             background-color: #0C65DB;
