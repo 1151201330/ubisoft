@@ -97,7 +97,6 @@
             background: black;
             line-height: 60px;
             margin-right: 0!important;
-            right: 18%!important;
         }
         /* 轮播图上的文字展示 */
         .carousel .carousel-inner>div>.circle {
@@ -606,7 +605,7 @@
         .moremedia .moremedia-txt {
             color: #fff;
             display: block;
-            top: 92%;
+            top: 68%;
             width: 30%;
             border-bottom: 1px solid #fff;
             border-top: 1px solid #fff;
