@@ -236,8 +236,9 @@ body {
 
 /* 侧栏，游戏推荐 */
 
-.sale {
+body .sale {
     background: #3f3f3f;
+    padding-right: 20px;
     /* height: 2691.68px */
 }
 
@@ -355,8 +356,8 @@ legend {
 /* 移动端，超小屏幕 */
 
 @media (max-width: 991px) {
-    .top {
-        display: none;
+    .type {
+        margin-top: 50px;
     }
     .drop,
     .drop2 {
