@@ -23,6 +23,16 @@ h6 {
     box-sizing: border-box;
 }
 
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 img {
     display: block;
 }
@@ -485,5 +495,454 @@ p {
     }
     .open {
         display: block;
+    }
+}
+
+
+/* 大于768px */
+
+@media (max-width: 768px) {
+    /* 主要背景图片 */
+    .top-wrap {
+        width: 100%;
+        /* overflow: hidden; */
+        position: relative;
+        margin: 0;
+    }
+    .hero-image {
+        padding: 0;
+        background-size: cover;
+        background-position: 50% 0;
+        margin-top: 50px;
+        height: 100%;
+        width: 100%;
+    }
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+    }
+    /* 大圆 */
+    .circle-wrap {
+        /* left: -23px;
+        top: 50%; */
+        /* margin-top: -305px; */
+        /* position: absolute; */
+        background: linear-gradient(-45deg, #3e61ad 40%, #8ea4d3 100%);
+        background-size: cover;
+        opacity: 0.9;
+        height: 266px;
+        width: 100%;
+        /* border-radius: 50%; */
+        color: #fff;
+        filter: alpha(opacity=90);
+        padding: 0;
+        /* display: table; */
+    }
+    .circle {
+        display: table-cell;
+        font-size: 35px;
+        font-size: 3.5rem;
+        vertical-align: middle;
+        padding: 45px 30px;
+        height: 266px;
+        width: 100%;
+    }
+    .circle>h1 {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .italic {
+        font-style: italic;
+        width: 100%;
+    }
+    .circle>h3 {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .circle>.h4,
+    .circle-btn-large>.h4 {
+        font-size: 16px;
+        color: #3e61ad;
+    }
+    .circle button,
+    .circle a {
+        bottom: 69px;
+        cursor: pointer;
+        display: block;
+        left: 50%;
+        margin-left: -39px;
+        position: absolute;
+    }
+    .circle-btn {
+        padding: 10px 0px;
+        height: 35px;
+        width: 35px;
+    }
+    .circle-btn,
+    .circle-btn-large {
+        background: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        overflow: hidden;
+        padding: 30px 0px;
+        position: relative;
+        text-align: center;
+        height: 35px;
+        width: 35px;
+    }
+    .show-tablet-only {
+        display: none!important;
+    }
+    /* 下一个div */
+    .uplay-tips .tips h1 {
+        width: 114px;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        height: 94px;
+    }
+    .tips h1 img {
+        display: block;
+        margin: 0 auto;
+    }
+    .uplay-tips {
+        height: 572.09px;
+        background: #2e519b url(../../images/images-zx/uplay_bg.png);
+    }
+    .row {
+        margin: 0px;
+    }
+    .uplay-tips .uplaylogo {
+        text-align: center;
+        height: 168.09px;
+    }
+    .uplay-tips .uplaylogo img {
+        width: 100%;
+        max-width: 489px;
+        vertical-align: middle;
+        border: 0;
+    }
+    /* 右边部分 */
+    .tips {
+        padding: 0!important;
+    }
+    .tips h1 {
+        width: 114px;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        height: 94px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .uplay-tips .tips h2 {
+        padding-left: 114px;
+        display: table-cell;
+        text-align: left;
+        color: #fff;
+        line-height: 25px;
+        padding-right: 10%;
+        word-spacing: 8px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        margin-bottom: 25px;
+        margin-top: 30px;
+        height: 154px;
+        vertical-align: middle;
+    }
+    .tips h2 span {
+        color: #fff600;
+    }
+    .uplay-tips .tips a {
+        display: inline-block;
+        /* width: 100%; */
+        /* margin: 10px 20.547px; */
+        height: 50px;
+        text-align: left;
+        padding: 5px 10px;
+        border: none;
+        background: #739aee;
+        color: #fff;
+        margin: 10px 5%;
+        font-size: 18px;
+        /* disp: block; */
+        width: 90%;
+    }
+    .uplay-tips .tips a span {
+        color: #fff;
+        font-style: normal;
+        font-size: 30px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .uplay-tips .tips a .uplay-ico {
+        float: right;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #fff;
+        width: 32px;
+        height: 32px;
+        margin-top: 5px;
+    }
+    .uplay-tips .tips a .uplay-ico span {
+        font-size: 18px;
+        line-height: 32px;
+        padding-left: 6px;
+        color: #1b95e0;
+    }
+    /* 下一个div */
+    .support-wrap {
+        width: 100%;
+        display: block;
+    }
+    /* 右半部分 */
+    .support-method-wrap {
+        background-color: #FFFFFF;
+        position: relative;
+        padding-top: 25px;
+    }
+    .col-md-7 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .support-method-wrap header {
+        margin: 0 0 20px 0;
+    }
+    .support-method-pc1 {
+        padding: 20px 25px;
+        padding-bottom: 0;
+    }
+    .row {
+        margin: 0;
+    }
+    .support-method-pc1 .support-method-sub {
+        background: #d2d2d2;
+        padding: 25px 10px;
+    }
+    .support-method-pc1 .support-method-sub img {
+        width: 100%;
+    }
+    .support-method-wrap header h1 {
+        background-image: url(http://cdn.hommk.com/pcgame/ubi2015/img/header-border-black.png), url(http://cdn.hommk.com/pcgame/ubi2015/img/header-border-black.png);
+        background-position: 50% 0, 50% 100%;
+        background-repeat: no-repeat;
+        color: #000;
+        min-width: 54px;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 18px;
+    }
+    .support-method-wrap .exp {
+        text-align: center;
+        font-weight: bold;
+        margin: 0 20px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .support-method-wrap .exp span {
+        color: #3e61ad;
+    }
+    .support-method-wrap .exp a {
+        color: #3e61ad;
+    }
+    .support-method-title {
+        width: 100%;
+        text-align: left;
+        color: #fff;
+        height: 50px;
+        background: #000;
+        padding-left: 0px;
+        position: relative;
+    }
+    .support-method-title h3 {
+        line-height: 50px;
+        font-weight: bold;
+    }
+    h3 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .support-method-title h3 span {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .gotonext {
+        display: block;
+        width: 150px;
+        height: 50px;
+        color: #fff!important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #299114;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+    }
+    /* 右边部分 */
+    .support-mobile-wrap {
+        border: 25px solid #3e61ad;
+    }
+    .col-md-5 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .support-mobile-wrap .row {
+        margin: 20px 10px;
+        text-align: center;
+    }
+    .support-mobile-wrap .row header h1 {
+        background-image: url(http://cdn.hommk.com/pcgame/ubi2015/img/header-border-black.png), url(http://cdn.hommk.com/pcgame/ubi2015/img/header-border-black.png);
+        background-position: 50% 0, 50% 100%;
+        background-repeat: no-repeat;
+        color: #000;
+        min-width: 54px;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 18px;
+    }
+    .support-mobile-wrap h3 {
+        margin: 30px;
+        font-weight: bold;
+    }
+    .support-method {
+        padding: 0px 10px;
+        float: left;
+        position: relative;
+    }
+    .support-method-img img {
+        width: 100%;
+        border: 0;
+    }
+    .support-mobile-wrap .support-method-title {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        height: 80px;
+        background: #000;
+        padding-left: 0px;
+        position: relative;
+    }
+    .support-mobile-wrap .support-method-title h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    .support-mobile-wrap .support-method-title h4 {
+        color: #969696;
+        font-size: 12px;
+        margin: 5px;
+    }
+    /* 下一个div */
+    .gameselect>.dropdown-menu>.active>a {
+        color: #FFF;
+        background-color: #3e61ad;
+        line-height: 50px;
+        padding: 0px;
+        border-bottom: solid 1px #404040;
+    }
+    .faq-wrap {
+        padding: 20px;
+        width: 100%;
+    }
+    .ubi-title {
+        width: 100%;
+        height: 50px;
+        background-color: #3e61ad;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        padding-left: 20px;
+        position: relative;
+    }
+    .ubi-title .option {
+        width: 30%;
+        background-color: #252525;
+        float: right;
+    }
+    .option>ul {
+        height: 50px;
+    }
+    .gameselect {
+        width: 100%;
+    }
+    .gameselect>a {
+        color: #999!important;
+        border: none !important;
+        border-radius: 0px!important;
+        background-color: transparent !important;
+        height: 50px;
+    }
+    .gameselect>a>span {
+        color: #fff;
+    }
+    .gameselect>.dropdown-menu {
+        width: 100%;
+        padding: 0px;
+        background-color: #000;
+        text-align: center;
+        border-radius: 0px;
+        border: none;
+        min-width: 100%;
+    }
+    .gameselect>.dropdown-menu>li>a {
+        line-height: 50px;
+        padding: 0px;
+        border-bottom: solid 1px #404040;
+    }
+    /* .gameselect>.dropdown-menu>.active>a {
+        color: #FFF;
+        background-color: #3e61ad;
+        line-height: 50px;
+        padding: 0px;
+        border-bottom: solid 1px #404040;
+    } */
+    .panel-group .faq-panel {
+        box-shadow: none;
+        border-radius: 0px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px #cdcdcd;
+    }
+    .panel-default>.faq-question {
+        background-color: #fff;
+        border: none;
+        padding: 45px 50px;
+        position: relative;
+    }
+    .panel-title>a {
+        font-size: 18px;
+        font-weight: bold;
+        color: #252525;
+    }
+    .faq-question:before {
+        content: "\e085";
+        font-family: 'Glyphicons Halflings';
+        font-size: 30px;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 32px;
+        color: #3e61ad;
+    }
+    .panel-collapse>.faq-answer {
+        background: #dddddd;
+        margin: 0 30px 30px 30px;
+    }
+    .collapsed:hover {
+        color: #888;
+    }
+    .open {
+        display: block;
+    }
+    .panel-body p img {
+        width: 100%!important;
+        height: 100%!important;
     }
 }
