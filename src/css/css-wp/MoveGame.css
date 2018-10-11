@@ -30,7 +30,8 @@
     }
     
     .container-fluid {
-        padding: 0!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
     }
     
     a,
@@ -794,7 +795,7 @@
             display: block;
             position: relative;
             text-align: center;
-            line-height: 20px;
+            line-height: 0;
         }
         .circle-wrap .circle .circle-word a .icon-arrow-up {
             color: black;
@@ -1325,7 +1326,7 @@
             display: block;
             position: relative;
             text-align: center;
-            line-height: 10px;
+            line-height: 0;
         }
         .circle-wrap .circle .circle-word a .icon-arrow-up {
             color: black;
