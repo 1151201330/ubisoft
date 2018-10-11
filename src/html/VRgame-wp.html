@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="../css/css-wp/VRgame.css">
     <link rel="stylesheet" href="../font/font-wp/font_dnldlv3zftd/iconfont.css">
     <link rel="stylesheet" href="../font/font-wp/font_c1rslsnxies/iconfont.css">
+    <link rel="stylesheet" href="../css/css-ha/head.css">
+    <link rel="stylesheet" href="../css/css-ha/common.css">
+    <link rel="stylesheet" href="../css/css-ha/foot.css">
+
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -19,7 +23,94 @@
 
 <body>
     <!-- 头部 -->
-    <div class="head">
+    <!-- loadblock -->
+    <div class="loadblock">
+        <img class="loadbig" src="../images/images-ha/loadbig.png" alt="">
+    </div>
+    <!-- navbar -->
+    <div class="navbar navbar-fixed-top container-fluid">
+
+        <!-- nav-left -->
+        <a class="nav-left" href="index-ha.html">
+        </a>
+
+        <!-- nav-right -->
+        <div class="nav-right">
+            <!-- nav-right-uplay -->
+            <a href="#" class="nav-right-uplay"></a>
+            <!-- nav-right-btn -->
+            <button type="button" class="nav-right-btn btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+            <!-- nav-right-search -->
+            <div class="nav-right-search">
+                <div class="search-action">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <span>搜索游戏</span>
+                </div>
+                <div class="search-show container">
+                    <input type="text" class="-active" placeholder="请输入关键字">
+                    <ul class="search-show-result"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- button-show -->
+        <div class="button-show">
+            <ul class="button-show-list">
+                <li class="active"><a href="#">首页</a></li>
+                <li>
+                    <a href="#">游戏</a>
+                    <button class="game-btn glyphicon glyphicon-triangle-bottom"></button>
+                    <ul class="game-show">
+                        <li><a href="#">主机游戏</a></li>
+                        <li><a href="#">PC游戏</a></li>
+                        <li><a href="#">移动游戏</a></li>
+                        <li><a href="#">VR游戏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">支持</a></li>
+                <li><a href="#">Uplay</a></li>
+            </ul>
+        </div>
+
+        <!-- nav-list -->
+        <ul class="nav-list nav navbar-nav">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">游戏</a>
+                <button class="nav-list-drop dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
+                </span>
+            </button>
+                <!-- dropdown-menu -->
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">主机游戏</a>
+                    </li>
+                    <li>
+                        <a href="#">PC游戏</a>
+                    </li>
+                    <li>
+                        <a href="#">移动游戏</a>
+                    </li>
+                    <li>
+                        <a href="#">VR游戏</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span>STORE</span>商城</a>
+            </li>
+            <li>
+                <a href="#">支持</a>
+            </li>
+        </ul>
     </div>
 
 
@@ -231,10 +322,75 @@
         <div class="modal-content pic-big3 hidden"><img src="../images/image-wp/12.jpg" alt=""></div>
     </div>
     <!-- 尾部 -->
-    <div class="foot"></div>
+    <!-- footer -->
+    <div class="footer container-fluid">
+        <!-- wechat -->
+        <ul class="wechat">
+            <li class="wechat-block">
+                <div class="wechat-code">
+                    <img src="../images/images-ha/ubi_qr.jpg" alt="">
+                </div>
+                <a href="#">育碧中国微信公众号<img src="../images/images-ha/wechat.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#">育碧中国新浪微博<img src="../images/images-ha/weibo.png" alt=""></a>
+            </li>
+            <li class="wechat-block">
+                <div class="wechat-code">
+                    <img src="../images/images-ha/ubi_qr.jpg" alt="">
+                </div>
+                <a href="#">育碧手游微信公众号<img src="../images/images-ha/wechat.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#">育碧手游新浪微博<img src="../images/images-ha/weibo.png" alt=""></a>
+            </li>
+        </ul>
+        <!-- game -->
+        <div class="game container-fluid">
+            <h2>育碧游戏专区</h2>
+            <a href="#">*《刺客信条:奥德赛》专区</a>
+            <a href="#">*《彩虹六号:围攻》专区</a>
+            <a href="#">*《刺客信条:起源》专区</a>
+            <a href="#">*《刺客信条》系列专区</a>
+            <a href="#">*《孤岛惊魂5》专区</a>
+            <a href="#">*《酷飙车神2》专区</a>
+            <a href="#">*《全境封锁》专区</a>
+            <a href="#">*《舞力全开2017》专区</a>
+            <a href="#">*《看门狗2》专区</a>
+            <a href="#">*《孤岛惊魂:野蛮纪元》专区</a>
+            <a href="#">*《幽灵行动:荒野》专区</a>
+        </div>
+        <!-- language -->
+        <div class="language container-fluid">
+            <button class="language-btn btn-arrow white flag arrow-up">
+                <svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-guoqizhongguo"></use>
+                </svg>
+                China - Simplified Chinese
+                <i class="glyphicon glyphicon-triangle-top"></i>
+            </button>
+        </div>
+        <!-- about -->
+        <div class="about container-fluid">
+            <a href="#">关于我们</a> /
+            <a href="#">联系我们</a> /
+            <a href="#">加入我们</a>
+        </div>
+        <!-- copyright -->
+        <div class="copyright container-fluid">
+            <p>©2006-2013 Ubisoft Entertainment. All Rights Reserved. Ubisoft, ubi.com, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the U.S. and/or other countries.</p>
+            <p>上海碧汉网络科技有限公司 | 沪网文（2016）0067-067号 沪ICP备10013909号-11 | 增值电信业务经营许可证: B2-20100035</p>
+            <p><img src="../images/images-ha/gameRFID.png" alt=""></p>
+            <p><img src="../images/images-ha/beian.png">沪公网安备 31010402002141号</p>
+        </div>
+
+    </div>
     <script src="../node_modules/jquery/dist/jquery.min.js "></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
     <script src="../js/js-wp/VRgame.js"></script>
+    <script src="../js/js-ha/head.js"></script>
+    <script src="../js/js-ha/foot.js"></script>
+    <script src="../font/font-ha/font_g3wob8wmzd8/iconfont.js"></script>
 </body>
 
 </html>

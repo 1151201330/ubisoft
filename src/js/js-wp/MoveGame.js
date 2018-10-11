@@ -1,6 +1,4 @@
 window.onload = function() {
-    $('.head').load('http://10.31.157.191:8080/ubisoft/src/html/head-ha.html');
-    $('.foot').load('http://10.31.157.191:8080/ubisoft/src/html/foot-ha.html');
     // 鼠标跳动
     var show = function() {
         $('.mouse').animate({
