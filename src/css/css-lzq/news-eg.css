@@ -241,6 +241,10 @@ body {
     height: auto;
 }
 
+.content .pic img {
+    max-width: 600px;
+}
+
 
 /* 侧栏，游戏推荐 */
 
@@ -347,13 +351,6 @@ body .sale {
     width: auto;
     margin-left: 15px;
     margin-top: 10px;
-}
-
-legend {
-    width: 90px;
-    border: none;
-    color: #fff;
-    font-size: 16px;
 }
 
 .sale .relact {
