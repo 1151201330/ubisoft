@@ -97,6 +97,7 @@
             background: black;
             line-height: 60px;
             margin-right: 0!important;
+            right:0!important;
         }
         /* 轮播图上的文字展示 */
         .carousel .carousel-inner>div>.circle {
