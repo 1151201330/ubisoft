@@ -29,11 +29,6 @@
         padding: 0!important;
     }
     
-    .container-fluid {
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-    
     a,
     a:hover,
     a:active {
@@ -786,7 +781,7 @@
             font-style: italic!important;
         }
         .circle-wrap .circle .circle-word a {
-            padding: 18px 0px;
+            padding: 20px 0px;
             height: 50px;
             width: 50px;
             margin-left: 175px;
@@ -1317,7 +1312,7 @@
             font-style: italic!important;
         }
         .circle-wrap .circle .circle-word a {
-            padding: 18px 0px;
+            padding: 10px 0px;
             height: 35px;
             width: 35px;
             margin: 0 auto;
@@ -1359,7 +1354,7 @@
         .news-wrap ul li {
             vertical-align: top;
             display: inline-block;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             margin-bottom: 20px;
             padding: 0 1%;
