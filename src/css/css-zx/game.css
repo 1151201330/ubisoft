@@ -934,8 +934,8 @@ color: #ffdb15;
                  margin-top: 0px;
              }
              .opation {
-                 width: 337.25px;
-                 height: 337.25px;
+                 width: 100%;
+                 height: 100%;
                  position: absolute;
                  top: 0;
                  left: 0;
@@ -944,8 +944,8 @@ color: #ffdb15;
                  display: none;
              }
              .b_opation {
-                 width: 337.25px;
-                 height: 337.25px;
+                 width: 100%;
+                 height: 100%;
                  position: absolute;
                  top: 0;
                  left: 0;
@@ -1959,7 +1959,7 @@ color: #ffdb15;
                  height: 1px;
                  background: white;
                  position: absolute;
-                 top: 275px;
+                 top: 283px;
                  left: 159px;
              }
              .b_line {
@@ -1969,6 +1969,14 @@ color: #ffdb15;
                  position: absolute;
                  top: 310px;
                  left: 159px;
+             }
+             .marod {
+                 z-index: 11;
+                 width: 130px;
+                 height: 40.547px;
+                 position: absolute;
+                 top: 100px;
+                 right: 127px;
              }
          }
          
