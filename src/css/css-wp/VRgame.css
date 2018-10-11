@@ -1037,11 +1037,11 @@ body,
     }
     /* 轮播图左右控制键 */
     .carousel-control {
-        top: 50%;
+        top: -4%;
     }
     .carousel .glyphicon-chevron-left {
         color: white;
-        left: 4%!important;
+        left: 30%!important;
         width: 50px!important;
         height: 60px!important;
         background: black;
@@ -1049,7 +1049,7 @@ body,
     }
     .carousel .glyphicon-chevron-right {
         color: white;
-        right: 6%!important;
+        right: 3%!important;
         width: 50px!important;
         height: 60px!important;
         background: black;
