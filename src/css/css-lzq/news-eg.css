@@ -173,6 +173,10 @@ body {
 
 /* content */
 
+.bj2 {
+    background: #3f3f3f;
+}
+
 .news {
     background: #fff;
 }
@@ -207,6 +211,10 @@ body {
 
 .more a:hover {
     color: #fff;
+}
+
+.news .content {
+    background: #fff;
 }
 
 .content h1 {
@@ -414,17 +422,7 @@ legend {
 
 /* 小屏幕（平板，大于等于 768px） */
 
-@media (min-width: 768px) {
-    /* .banner {
-        display: none;
-    }
-    .drop,
-    .drop2 {
-        position: absolute;
-        display: none;
-        z-index: 999;
-    } */
-}
+@media (min-width: 768px) {}
 
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -440,13 +438,6 @@ legend {
         display: none;
         z-index: 999;
     }
-    .sale {
-        height: 2387px;
-    }
 }
 
-@media (min-width: 1200px) {
-    .sale {
-        height: 2689px;
-    }
-}
+@media (min-width: 1200px) {}
