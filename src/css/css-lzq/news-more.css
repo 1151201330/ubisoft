@@ -200,6 +200,7 @@ body .type {
 
 .content .right {
     background: #000;
+    padding: 0 10px;
 }
 
 .content .title a {
