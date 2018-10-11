@@ -30,7 +30,6 @@ a,
     padding: 0!important;
 }
 
-
 a,
 a:hover,
 a:active {
@@ -88,7 +87,7 @@ body,
     }
     /* 轮播图上的左右控制 */
     .carousel-control {
-        top: 50%;
+        top: -4%;
     }
     .carousel .glyphicon-chevron-left {
         color: white;
@@ -598,7 +597,7 @@ body,
     }
     /* 轮播图左右控制键 */
     .carousel-control {
-        top: 50%;
+        top: -4%;
     }
     .carousel .glyphicon-chevron-left {
         color: white;

@@ -80,7 +80,7 @@
         }
         /* 轮播图上的左右控制 */
         .carousel-control {
-            top: 50%;
+            top: -4%;
         }
         .carousel .glyphicon-chevron-left {
             color: white;
@@ -125,7 +125,7 @@
             display: block;
             position: absolute;
             bottom: 82px;
-            left: 50%;
+            left: 40%;
             margin-left: -125px;
             width: 250px;
             line-height: 50px;
@@ -686,7 +686,7 @@
         }
         /* 轮播图左右控制键 */
         .carousel-control {
-            top: 50%;
+            top: -4%;
         }
         .carousel .glyphicon-chevron-left {
             color: white;
