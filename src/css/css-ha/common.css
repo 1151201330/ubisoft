@@ -135,13 +135,6 @@ ol {
     outline: none;
 }
 
-.clearfix {
-    clear: both;
-    content: "";
-    display: block;
-    overflow: hidden
-}
-
 .clear {
     clear: both;
 }
