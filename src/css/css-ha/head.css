@@ -2,6 +2,7 @@
 .jzgd {
     overflow: scroll!important;
     overflow-y: hidden!important;
+    overflow-x: hidden!important;
 }
 
 .loadblock {
