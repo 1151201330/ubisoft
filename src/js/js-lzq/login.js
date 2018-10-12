@@ -33,6 +33,8 @@ $(function() {
         // 登录
 
     $('#enter').on('click', function() {
+        // 保存cookie
+
         $.ajax({
             type: "post",
             url: "../php/php-lzq/login.php",
@@ -44,7 +46,13 @@ $(function() {
             success: function(data) {
                 if (data == "shangchen.html") {
                     location.href = data;
-
+                    // 登录信息保存cookie
+                    document.cookie = $("#email").val() + "=" + $("#pwd").val() + "; ";
+                    if (remember.checked) {
+                        var d = new Date();
+                        d.setDate(d.getDate() + 3);
+                        document.cookie = $("#email").val() + "=" + $("#pwd").val() + "; " + "expires=" + d;
+                    }
 
                 } else {
                     span.innerText = data;
@@ -58,4 +66,5 @@ $(function() {
     $('#create').on('click', function() {
         location.href = "lzq-register.html";
     })
+
 })
