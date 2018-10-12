@@ -116,8 +116,10 @@ body {
     color: #fff;
 }
 
-.active {
+.drop .active,
+.drop2 .active {
     background: #3f3f3f;
+    color: #fff;
 }
 
 .drop,
@@ -207,6 +209,10 @@ body {
     text-decoration: none;
     font-size: 18px;
     display: block;
+}
+
+.type .gt {
+    padding-left: 0;
 }
 
 .more a:hover {
