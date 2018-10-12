@@ -2218,7 +2218,7 @@ left: -23px; */
     /* 另一块 */
     /* 字体游戏 */
     .arrow-bottom {
-        width: 100%;
+        width: 22%;
         height: 36px;
         padding: 11px 0;
         line-height: 14px;
@@ -2229,6 +2229,8 @@ left: -23px; */
         /* margin-top: 20px; */
         color: white;
         text-align: center;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
     }
     .italic {
         margin-top: 27px;
@@ -2271,7 +2273,7 @@ left: -23px; */
         width: 35px;
         margin: 0 auto;
         margin-top: 35px;
-        margin-left: 40%;
+        margin-left: 45%;
         font-size: 16px;
         color: white;
     }
@@ -2316,22 +2318,26 @@ left: -23px; */
     }
     /* 上下两根线 */
     .t_line {
-        width: 54px;
+        /* width: 54px;
         height: 1px;
         background: white;
         position: absolute;
         top: 275px;
-        /* left: 154px; */
-        margin: 0 auto;
+        left: 154px;
+        margin: 0 auto; */
+        width: 0;
+        height: 0;
     }
     .b_line {
-        width: 54px;
+        /* width: 54px;
         height: 1px;
         background: white;
         position: absolute;
         top: 252px;
-        /* left: 154px; */
-        margin: 0 auto;
+        left: 154px;
+        margin: 0 auto; */
+        width: 0;
+        height: 0;
     }
     .circle .icons.two {
         background: url(http://cdn.hommk.com/pcgame/ubi2015/img/sprite-global-desktop.png) no-repeat 0 0;
