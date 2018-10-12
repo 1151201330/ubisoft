@@ -54,3 +54,7 @@ setTimeout(function() {
     $('.loadblock').animate({ top: '-100%' }, 1000);
     $('.loadblock').animate({ display: 'none' });
 }, 2300);
+
+setTimeout(function() {
+    $('body').removeClass('jzgd');
+}, 3300);

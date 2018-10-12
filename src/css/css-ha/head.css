@@ -1,4 +1,9 @@
 @charset "utf-8";
+.jzgd {
+    overflow: scroll!important;
+    overflow-y: hidden!important;
+}
+
 .loadblock {
     top: 0;
     position: fixed;

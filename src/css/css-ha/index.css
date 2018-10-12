@@ -2,6 +2,10 @@
 
 /* banner */
 
+body img {
+    width: 100%;
+}
+
 .banner {
     margin-top: 50px;
     padding: 0;
