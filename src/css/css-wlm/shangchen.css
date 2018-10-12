@@ -109,7 +109,7 @@ fieldset{
 }
 
 .nav-search .bttn{
-    background:url(../image-wlm/3.png) no-repeat;
+    background:url('../../images/image-wlm/3.png') no-repeat;
     background-position: 0 -4659px;
     width: 35px;
     height: 35px;
@@ -120,7 +120,7 @@ fieldset{
     z-index:1000;
 }
 .nav-search .bbn{
-     background:url(../image-wlm/3.png) no-repeat;
+     background:url('../../images/image-wlm/3.png') no-repeat;
     background-position: 0 -4604px;
     width: 35px;
     height: 35px;
@@ -436,7 +436,7 @@ fieldset{
     display:none
 }
 .push .cap-sp{
-    background:url("../image-wlm/9.png") no-repeat;
+    background:url("../../images/image-wlm/9.png") no-repeat;
     background-position: 0 -7042px;
     width:76px;
     height:76px;
@@ -446,7 +446,7 @@ fieldset{
     transform: translateX(-50%);
 } 
 .wrapper .push-youtube:hover .cap-sp, .wrapper .push-twitch:hover .cap-sp {
-    background-image: url("../image-wlm/9.png");
+    background-image: url("../../images/image-wlm/9.png");
     background-position: 0 -6946px;
     background-repeat: no-repeat;
     width: 76px;
@@ -566,7 +566,7 @@ fieldset{
     margin-right: 10px;
 }
 .product-full>a::after{
-    background-image: url(../image-wlm/9.png);
+    background-image: url(../../images/image-wlm/9.png);
     background-position: 0 -1593px;
     background-repeat: no-repeat;
     width: 10px;
@@ -717,7 +717,7 @@ footer p{
 }
 @media screen and (max-width: 767px){
    .nav-top .nav-search .bbn{
-     background:url(../image-wlm/3.png) no-repeat;
+     background:url("../../images/image-wlm/3.png") no-repeat;
     background-position: 0 -3696px;
     width: 35px;
     height:100%;
@@ -735,7 +735,7 @@ footer p{
     padding-bottom: 61px;
 }
     .menu-active .nav-right .link a.up-login {
-    background-image: url(../image-wlm/3.png);
+    background-image: url("../../images/image-wlm/3.png");
     background-position: 0 -4550px;
     background-repeat: no-repeat;
     width: 34px;
@@ -784,7 +784,7 @@ footer p{
     color:#fff
 }
     .menu-active .nav-btm>li.frot .fa-angle {
-    background-image: url(../image-wlm/3.png);
+    background-image: url(../../images/image-wlm/3.png);
     background-position: 0 -1023px;
      background-repeat: no-repeat; 
      width: 22px; 
@@ -814,7 +814,7 @@ footer p{
     border-top: 1px solid #696969;
 }
     .menu-active .nav-btm>li .fa-angle{
-    background-image: url(../image-wlm/3.png);
+    background-image: url(../../images/image-wlm/3.png);
     background-position: 0 -3166px;
     background-repeat: no-repeat;
     width: 13px;
@@ -859,7 +859,7 @@ footer p{
         height: 27px;
     }
    .nav-search .bttn{
-       background-image: url(../image-wlm/3.png);
+       background-image: url(../../images/image-wlm/3.png);
     background-position: 0 -3743px;
     background-repeat: no-repeat;
     width: 35px;
@@ -888,7 +888,7 @@ footer p{
    
    }
    .menu-active .menu-toggle .menu-icon{
-    background-image: url(../image-wlm/3.png);
+    background-image: url(../../images/image-wlm/3.png);
     background-position: 0 -3294px;
     background-repeat: no-repeat;
     width: 24px;
