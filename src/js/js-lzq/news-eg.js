@@ -23,7 +23,7 @@ $(function() {
 
     $('.drop li a').on('click', function() {
         $('.drop li a').removeClass('active');
-        $('#all').html($(this).html());
+        $('#all').html($(this).html().toUpperCase());
         $(this).addClass('active');
     })
     $('.drop2 li a').on('click', function() {

@@ -169,7 +169,7 @@ $(function() {
                 },
                 // dataType: "dataType",
                 success: function(data) {
-                    if (data == "lzq-login.html") {
+                    if (data == "shangchen.html") {
                         location.href = data;
                     } else {
                         myspan.innerText = data;

@@ -14,7 +14,7 @@
   $data = mysql_query($sql2);
   $result = mysql_fetch_array($data); //将查询结果提取成数组
   if ($result) {
-    echo "lzq-register.html";
+    echo "shangchen.html";
 } else {
    echo "无效的邮箱或密码";
 

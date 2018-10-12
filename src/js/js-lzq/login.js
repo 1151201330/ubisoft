@@ -42,8 +42,10 @@ $(function() {
             },
             //  dataType: "dataType",
             success: function(data) {
-                if (data == "lzq-register.html") {
+                if (data == "shangchen.html") {
                     location.href = data;
+
+
                 } else {
                     span.innerText = data;
                     var hh = document.createElement('br');

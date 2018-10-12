@@ -20,7 +20,7 @@
         $sql3 = "INSERT INTO `ubisoft_register`(`reg_id`, `reg_name`, `reg_email`, `reg_pwd`, `reg_birthday`) VALUES (NULL,'$uname','$email','$pwd','$birthday')";
         $count = mysql_query($sql3); // 增加 删除 修改 返回受影响的行数
         if($count==1){
-            echo 'lzq-login.html';
+            echo 'shangchen.html';
         }
     }
 ?>
