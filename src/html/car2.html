@@ -377,9 +377,14 @@
     <script>
         $(function() {
             setTimeout(function() {
-                $(".whole").addClass("hide");
+                $(".whole").slideUp(500);
+            }, 3000);
+
+        })
+        $(function() {
+            setTimeout(function() {
                 $('body').removeClass("jzgundong");
-            }, 7000);
+            }, 3500);
 
         })
     </script>
