@@ -670,7 +670,7 @@ left: -23px; */
                  width: 100%;
              }
              .game-specs dt {
-                 width: 33%;
+                 width: 46%;
                  font-size: 11px;
                  line-height: 14px;
                  float: left;
@@ -678,7 +678,7 @@ left: -23px; */
                  font-weight: 700;
              }
              .clearfix dd {
-                 width: 67%;
+                 width: 54%;
                  margin: 0px 0px 12px;
                  font-size: 11px;
                  line-height: 14px;
