@@ -122,6 +122,12 @@ a {
     background: none
 }
 
+.footer a {
+    text-decoration: none;
+    color: #666;
+    background: none
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -153,4 +159,8 @@ ol {
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
+}
+
+.footer img {
+    display: inline-block;
 }
