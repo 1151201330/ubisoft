@@ -25,5 +25,5 @@ $(function(){
         $('.nav-btm>li').eq(1).toggleClass('frot')
         
     })
-$(".carousel-indicators").cssText('left','0');
+
 })
