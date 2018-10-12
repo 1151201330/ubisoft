@@ -399,7 +399,8 @@ left: -23px; */
         background: #e4251c;
         position: absolute;
         top: 453px;
-        left: 574px;
+        left: 50%;
+        margin-left: -125px;
         font-size: 22px;
         text-align: center;
         color: white;
@@ -410,7 +411,8 @@ left: -23px; */
         background: #e1a029;
         position: absolute;
         top: 453px;
-        left: 574px;
+        left: 50%;
+        margin-left: -125px;
         font-size: 22px;
         text-align: center;
         color: white;
@@ -421,7 +423,8 @@ left: -23px; */
         background: #745f1f;
         position: absolute;
         top: 453px;
-        left: 574px;
+        left: 50%;
+        margin-left: -125px;
         font-size: 22px;
         text-align: center;
         color: white;
@@ -432,7 +435,8 @@ left: -23px; */
         background: #f46634;
         position: absolute;
         top: 453px;
-        left: 574px;
+        left: 50%;
+        margin-left: -125px;
         font-size: 22px;
         text-align: center;
         color: white;
@@ -443,7 +447,8 @@ left: -23px; */
         background: #33c8f3;
         position: absolute;
         top: 453px;
-        left: 574px;
+        left: 50%;
+        margin-left: -125px;
         font-size: 22px;
         text-align: center;
         color: white;
@@ -454,7 +459,8 @@ left: -23px; */
         background: #003ef4;
         position: absolute;
         top: 453px;
-        left: 574px;
+        left: 50%;
+        margin-left: -125px;
         font-size: 22px;
         text-align: center;
         color: white;
@@ -491,7 +497,8 @@ left: -23px; */
         width: 100px;
         height: 100px;
         position: absolute;
-        left: 650px;
+        margin-left: -50px;
+        left: 50%;
         bottom: 45px;
         -webkit-animation: mouse 1s ease 0s infinite;
         animation: mouse 1s ease 0s infinite;
