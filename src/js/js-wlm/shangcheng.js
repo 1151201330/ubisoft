@@ -26,4 +26,29 @@ $(function(){
         
     })
 
+<<<<<<< HEAD
 })
+=======
+    // 检测cookie
+    //如果浏览器中存在Cookie
+    var arr = [],
+        i;
+    arr = document.cookie.split("; ");
+    for (i = 0; i < arr.length; i++) {
+        var temp = arr[i].split("=");
+        var myReg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;　　
+        if (myReg.test(temp[1])) {
+            // goto.innerText = "我的";　
+            $('#goto').text("我的")
+        }
+    }
+    $('#goto').on('click', function() {
+        location.href = 'lzq-login.html'
+    })
+
+
+
+
+
+})
+>>>>>>> aa907a5a4f0eed7d1e82da5cf81e752e538f8648
