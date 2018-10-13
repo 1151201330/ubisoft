@@ -48,6 +48,24 @@ $(function() {
                     location.href = data;
                     // 登录信息保存cookie
                     document.cookie = "email" + "=" + $("#email").val() + "; ";
+                    // document.cookie = "pwd" + "=" + $("#pwd").val() + "; ";
+                    if (remember.checked) {
+                        document.cookie = "email" + "=" + $("#email").val() + "; ";
+                        document.cookie = "pwd" + "=" + $("#pwd").val() + "; ";
+                        var arr = [],
+                            i;
+                        arr = document.cookie.split("; ");
+                        for (i = 0; i < arr.length; i++) {
+                            var temp = arr[i].split("=");
+                            if (temp[0] === "email") {
+                                $('#email').val(temp[1]);
+                                console.log(temp[1])
+                            }
+                            if (temp[0] === "pwd") {
+                                $('#pwd').val(temp[1])
+                            }
+                        }
+                    }
                 } else {
                     span.innerText = data;
                     var hh = document.createElement('br');
@@ -60,7 +78,6 @@ $(function() {
     $('#create').on('click', function() {
         location.href = "lzq-register.html";
     })
-
 
     if (remember.checked) {
         var arr = [],
