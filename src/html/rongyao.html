@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>育碧商城-荣耀战魂</title>
+    <title></title>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -236,15 +236,15 @@
         </nav>
         <!-- 主体 -->
 
-        <div id="main">
+        <div id="main" class="pt_product-details">
             <div id="pdpMain" class="collector-edition">
-                <div class="content-wrapper">
+                <div class="content-wrapper ">
                     <div class="product-top-content">
                         <section class="product-col-1 product-image-container">
                             <div class="product-primary-image primary-image">
                                 <a class="main-image">
                                     <img src="../images/image-wlm/90.jpg" class="primary-images">
-                                    <img src="../images/image-wlm/81.jpg" class="image-ima" style="display: none">
+                                    <img src="../images/image-wlm/81.jpg" class="image-ima">
                                 </a>
                             </div>
                             <div id="thumbnails">
@@ -383,7 +383,7 @@
 
             <!-- 选项卡 -->
             <div id="pdp-tabs">
-                <div class="pdp-tabs-background">
+                <div class="pdp-tabs-background ui-accordion">
                     <section class="product-detail-tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
                         <nav class="tab-thumbs">
                             <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
@@ -402,7 +402,10 @@
                             </ul>
                         </nav>
                         <div class="content-wrapper">
-                            <section id="medias-section" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="display:none">
+                            <h3 class="media-section-accordion-thumb pdp-accordion-thumb">
+                                <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">媒体</span>
+                            </h3>
+                            <section id="medias-section" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
                                 <section class="images">
                                     <header>图片</header>
                                     <section class="masonry-container">
@@ -438,8 +441,10 @@
                                     </section>
                                 </section>
                             </section>
-
-                            <section id="summary-section" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="display:none">
+                            <h3 class="media-section-accordion-thumb pdp-accordion-thumb">
+                                <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">摘要</span>
+                            </h3>
+                            <section id="summary-section" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
                                 <div class="read-wrapper">
                                     <div class="product-description">
                                         <article class="description-content">
@@ -562,7 +567,10 @@
                                     </ul>
                                 </section>
                             </section>
-                            <section id="system-requirements-section" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="display:none">
+                            <h3 class="media-section-accordion-thumb pdp-accordion-thumb">
+                                <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">系统需求</span>
+                            </h3>
+                            <section id="system-requirements-section" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
                                 <article class="minimum">
                                     <h3>
                                         <strong>MINIMUM</strong>
@@ -673,6 +681,9 @@
                                     </ul>
                                 </article>
                             </section>
+                            <h3 class="media-section-accordion-thumb pdp-accordion-thumb">
+                                <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">你也可能会喜欢</span>
+                            </h3>
                             <section id="you-may-like-section" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
                                 <div class="recommendations cross-sell">
                                     <div id="cross-sell-recommendations" class="carousel-recommendations">

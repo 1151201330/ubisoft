@@ -705,6 +705,12 @@ body .videos-more {
     display: block;
 }
 
+.videos-more>a:hover,
+.videos-more>a:active {
+    color: white;
+    text-decoration: none;
+}
+
 .videos-more-text {
     position: absolute;
     top: 40%;

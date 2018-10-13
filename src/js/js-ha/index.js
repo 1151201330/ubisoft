@@ -20,6 +20,17 @@ var intervalId = setInterval(function() {
 }, 100);
 
 //加载头部尾部
-
-$('.head').load('http://10.31.157.191:8080/ubisoft/src/html/head-ha.html');
 $('.foot').load('http://10.31.157.191:8080/ubisoft/src/html/foot-ha.html');
+
+//视频更多
+$('.videos-item:gt(6)').css('display', 'none');
+$('.videos-more').on('click', function() {
+    if ($('.videos-item:gt(6)').css('display') === 'none') {
+        $('.videos-more-text').text('收起');
+        $('.videos-item:gt(6)').fadeIn();
+    } else {
+        $('.videos-more-text').text('更多');
+        $('.videos-item:gt(6)').fadeOut();
+    }
+
+})
