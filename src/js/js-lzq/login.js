@@ -48,6 +48,7 @@ $(function() {
                     location.href = data;
                     // 登录信息保存cookie
                     document.cookie = $("#email").val() + "=" + $("#pwd").val() + "; ";
+                    // var uname = document.cookie = $("#email").val()+ "="  + "; "
                     if (remember.checked) {
                         var d = new Date();
                         d.setDate(d.getDate() + 3);

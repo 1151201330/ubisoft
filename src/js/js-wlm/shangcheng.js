@@ -27,15 +27,15 @@ $(function() {
     })
 
     // 检测cookie
-    // var cookies = request.getCookies();
     //如果浏览器中存在Cookie
     var arr = [],
         i;
     arr = document.cookie.split("; ");
     for (i = 0; i < arr.length; i++) {
         var temp = arr[i].split("=");
-        if (temp[0] == "11111@qq.com" || temp[0] == "22222@163.com" || temp[0] == "123@qq.com") {
-            goto.innerText = "我的";　
+        if (document.cookie) {
+            // goto.innerText = "我的";　
+            $('#goto').text("我的")
         }
     }
 

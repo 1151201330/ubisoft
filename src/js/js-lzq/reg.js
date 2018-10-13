@@ -171,6 +171,8 @@ $(function() {
                 success: function(data) {
                     if (data == "shangchen.html") {
                         location.href = data;
+                        // 登录信息保存cookie
+                        document.cookie = $("#email").val() + "=" + $("#pwd").val() + "; ";
                     } else {
                         myspan.innerText = data;
                         var hh = document.createElement('br');
