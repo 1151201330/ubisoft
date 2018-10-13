@@ -39,9 +39,9 @@ $(function() {
             $('#goto').text("我的")
         }
     }
-    $('#goto').on('click', function() {
-        location.href = 'lzq-login.html'
-    })
+    // $('#goto').on('click', function() {
+    //     location.href = 'lzq-login.html'
+    // })
 
 
 
