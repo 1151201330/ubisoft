@@ -37,6 +37,8 @@ $(function() {
     obj.middleImg = $('.primary-images'); //中等图片
     obj.bigImg = $('.image-ima'); //大图片
     obj.smallImg = $('.primary-images')
+    obj.thumb = $('.thumb')
+    obj.thumbnails = $('#thumbnails')
     uli = $('.content-wrapper>section')
     nnav = $('.ui-tabs-nav>li')
     var hh = $('.content-wrapper>.pdp-accordion-thumb');
@@ -64,49 +66,48 @@ $(function() {
 
 
 
-        obj.middleBox.on('mouseenter', function() {
+        obj.middleBox.on('mouseover', function() {
             //    for (var i = 0;i<obj.s.length; i++){
             //        $(".obj.middleImg");
             //    }
             //中等展示区进去事件，显示大图 隐藏中图
 
-            obj.bigImg.css('display', 'block');
+            obj.bigImg.show();
+            obj.middleBox.on('mousemove', function(ev) {
+                ev = ev || window.ev;
+                //console.log(ev.clientX)
+
+                obj.bigImg.css({
+                    left: -(ev.pageX - obj.middleBox.offset().left),
+                    top: -(ev.pageY - obj.middleBox.offset().top)
+                });
+            })
+            obj.middleBox.on('mouseout', function() {
+                //中等展示区进去事件，显示中图 隐藏大图
+                obj.bigImg.hide();
+
+            })
 
 
 
         })
 
-        obj.middleBox.on('mouseleave', function() {
-            //中等展示区进去事件，显示中图 隐藏大图
 
-            obj.bigImg.css('display', 'none');
-
-        })
-
-        obj.middleBox.on('mousemove', function(ev) {
-            ev = ev || window.ev;
-            //console.log(ev.clientX)
-
-            obj.bigImg.offset({
-                left: -ev.clientX + 559,
-                top: -ev.clientY + 250
-            });
-        })
     }
 
-    var n = 5;
+    var num = (obj.thumbnails.outerWidth() + 3) / obj.thumb.outerWidth(true);
+    var n = num
     var s = 0
-    var nu = 1
         //右击
     $(".jcarousel-next").on("click", function(ev) {
         ev = ev || window.event;
+        console.log(obj.thumbnails.outerWidth(), obj.thumb.outerWidth(true))
+        console.log(num, n)
         if (li.length > n) {
             n++;
             $("#thumbnails ul").css({
-                'left': -$(".product-image-container .thumb").width() * (n - 5) - 3 * (nu) + 'px',
+                'left': -obj.thumb.outerWidth(true) * (n - num) + 'px',
             });
-            nu++;
-            console.log(nu)
         }
         if (li.length > s + 1) {
             s++;
@@ -121,11 +122,9 @@ $(function() {
     $(".jcarousel-prev").on("click", function(ev) {
         ev = ev || window.event;
 
-        if (n > 5) {
+        if (n > num) {
             n--;
-            nu--;
-            console.log(nu)
-            $("#thumbnails ul").css({ left: -$(".product-image-container .thumb").width() * (n - 5) - 3 * (nu) + 3 + "px" });
+            $("#thumbnails ul").css({ left: -obj.thumb.outerWidth(true) * (n - num) + 'px' });
 
         }
         if (0 < s) {
