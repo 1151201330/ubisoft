@@ -47,14 +47,7 @@ $(function() {
                 if (data == "shangchen.html") {
                     location.href = data;
                     // 登录信息保存cookie
-                    document.cookie = $("#email").val() + "=" + $("#pwd").val() + "; ";
-                    // var uname = document.cookie = $("#email").val()+ "="  + "; "
-                    if (remember.checked) {
-                        var d = new Date();
-                        d.setDate(d.getDate() + 3);
-                        document.cookie = $("#email").val() + "=" + $("#pwd").val() + "; " + "expires=" + d;
-                    }
-
+                    document.cookie = "email" + "=" + $("#email").val() + "; ";
                 } else {
                     span.innerText = data;
                     var hh = document.createElement('br');
@@ -67,5 +60,26 @@ $(function() {
     $('#create').on('click', function() {
         location.href = "lzq-register.html";
     })
+
+
+    if (remember.checked) {
+        var arr = [],
+            i;
+        arr = document.cookie.split("; ");
+        for (i = 0; i < arr.length; i++) {
+            var temp = arr[i].split("=");
+            if (temp[0] === "email") {
+                $('#email').val(temp[1]);
+                console.log(temp[1])
+            }
+            if (temp[0] === "pwd") {
+                $('#pwd').val(temp[1])
+            }
+        }
+        var d = new Date();
+        d.setDate(d.getDate() + 3);
+        document.cookie = "email" + "=" + $("#email").val() + "; " + "expires=" + d;
+        document.cookie = "pwd" + "=" + $("#pwd").val() + "; " + "expires=" + d;
+    }
 
 })

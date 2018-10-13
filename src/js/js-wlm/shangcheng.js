@@ -33,11 +33,15 @@ $(function() {
     arr = document.cookie.split("; ");
     for (i = 0; i < arr.length; i++) {
         var temp = arr[i].split("=");
-        if (document.cookie) {
+        var myReg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;　　
+        if (myReg.test(temp[1])) {
             // goto.innerText = "我的";　
             $('#goto').text("我的")
         }
     }
+    $('#goto').on('click', function() {
+        location.href = 'lzq-login.html'
+    })
 
 
 
