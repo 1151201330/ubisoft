@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>育碧新闻-更多</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css-ha//head.css">
+    <link rel="stylesheet" href="../css/css-lzq/news-more.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="jzgd">
+    <!-- head -->
+    <!-- loadblock -->
+    <div class="loadblock">
+        <img class="loadbig" src="../images/images-ha/loadbig.png" alt="">
+    </div>
+    <!-- navbar -->
+    <div class="navbar navbar-fixed-top container-fluid">
+
+        <!-- nav-left -->
+        <a class="nav-left" href="index.html">
+        </a>
+
+        <!-- nav-right -->
+        <div class="nav-right">
+            <!-- nav-right-uplay -->
+            <a href="#" class="nav-right-uplay"></a>
+            <!-- nav-right-btn -->
+            <button type="button" class="nav-right-btn btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- nav-right-search -->
+            <div class="nav-right-search">
+                <div class="search-action">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <span>搜索游戏</span>
+                </div>
+                <div class="search-show container">
+                    <input type="text" class="-active" placeholder="请输入关键字">
+                    <ul class="search-show-result"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- button-show -->
+        <div class="button-show">
+            <ul class="button-show-list">
+                <li class="active"><a href="./index.html">首页</a></li>
+                <li>
+                    <a href="#">游戏</a>
+                    <button class="game-btn glyphicon glyphicon-triangle-bottom"></button>
+                    <ul class="game-show">
+                        <li><a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">主机游戏</a></li>
+                        <li><a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">移动游戏">PC游戏</a></li>
+                        <li><a href="./MoveGame-wp.html">移动游戏">移动游戏</a></li>
+                        <li><a href="./VRgame-wp.html">VR游戏</a></li>
+                    </ul>
+                </li>
+                <li><a href="./shangchen.html">商城</a></li>
+                <li><a href="http://10.31.157.191:8080/ubisoft/src/html/special.html">支持</a></li>
+                <li><a href="#">Uplay</a></li>
+            </ul>
+        </div>
+
+        <!-- nav-list -->
+        <ul class="nav-list nav navbar-nav">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">游戏</a>
+                <button class="nav-list-drop dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
+                    </span>
+                </button>
+                <!-- dropdown-menu -->
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">主机游戏</a>
+                    </li>
+                    <li>
+                        <a href="./game.html">PC游戏</a>
+                    </li>
+                    <li>
+                        <a href="./MoveGame-wp.html">移动游戏</a>
+                    </li>
+                    <li>
+                        <a href="./VRgame-wp.html">VR游戏</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./shangchen.html"><span>STORE</span>商城</a>
+            </li>
+            <li>
+                <a href="./special.html">支持</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- <div class=" top"></div> -->
+    <!-- banner -->
+    <div class="container-fluid banner">
+        <div class="circle text-center">
+            <h1>新闻</h1>
+            <h3 style="margin :15px 0">了解最新育碧最新消息</h3>
+            <!-- <i class="iconfont icon-jiantouxia"></i> -->
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </div>
+    </div>
+    <!-- banner结束 -->
+    <!-- 搜索栏 -->
+    <div class="container-fluid type">
+        <div class="box">
+            <div class="row position">
+                <div class="col-md-4 col col-xs-12">
+                    <button class="platform text-left"> 平台分类：
+                    <span id="all">  全部</span> 
+                    <span class="caret"></span> 
+                    </button>
+                    <div class="drop">
+                        <ul>
+                            <li><a class="active" href="#">全部</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">online</a></li>
+                            <li><a href="#">PC</a></li>
+                            <li><a href="#">Playstation4</a></li>
+                            <li><a href="#">Xbox One</a></li>
+                            <li><a href="#">Xbox 360</a></li>
+                            <li><a href="#">Playstation3</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">Playstation Vita</a></li>
+                            <li><a href="#">Wii U</a></li>
+                            <li><a href="#">Wii</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">windows phone</a></li>
+                            <li><a href="#">Virtual Reality Devices</a></li>
+                            <li><a href="#">Nintendo Switch</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col col-xs-12">
+                    <button class="game text-left"> 游戏类型：
+                    <span id="all2">  全部</span> 
+                    <span class="caret"></span> 
+                    </button>
+                    <div class="drop2">
+                        <ul>
+                            <li><a class="active" href="#">全部</a></li>
+                            <li><a href="#">动作</a></li>
+                            <li><a href="#">冒险</a></li>
+                            <li><a href="#">街机</a></li>
+                            <li><a href="#">休闲</a></li>
+                            <li><a href="#">家庭</a></li>
+                            <li><a href="#">格斗</a></li>
+                            <li><a href="#">第一人称射击</a></li>
+                            <li><a href="#">经营</a></li>
+                            <li><a href="#">体感</a></li>
+                            <li><a href="#">音乐</a></li>
+                            <li><a href="#">横版</a></li>
+                            <li><a href="#">竞速</a></li>
+                            <li><a href="#">角色扮演</a></li>
+                            <li><a href="#">模拟</a></li>
+                            <li><a href="#">运动</a></li>
+                            <li><a href="#">策略</a></li>
+                            <li><a href="#">卡牌</a></li>
+                            <li><a href="#">战术射击</a></li>
+                            <li><a href="#">第三人称射击</a></li>
+                            <li><a href="#">益智</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col col-xs-12 put">
+                    <div class="row text-center ml">
+                        <div class="col-md-10 col-xs-10">
+                            <input type="search" placeholder="Keyword">
+                        </div>
+                        <div class="col-md-2 col-xs-2 ">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏结束 -->
+    <!-- content -->
+
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="row part">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="http://10.31.157.13:8080/project-lzq/ubisoft/src/html/lzq-news-eg.html">享受体育阖家欢！《SPORTS PARTY》10月30日登陆 NINTENDO SWITCH™</a>
+                        </div>
+
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 xc">
+                <div class="row part">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row part">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 xc">
+                <div class="row part ">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row part">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 xc">
+                <div class="row part wrap">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row part">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 xc">
+                <div class="row part">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row part">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 xc">
+                <div class="row part ">
+                    <div class="col-md-4 col-xs-4 left">
+                        <img src="../images/images-lzq/original_1537521653.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 col-xs-8 right">
+                        <div class="title">
+                            <a href="">《刺客信条：奥德赛》四款全新手办今日正式发售</a>
+                        </div>
+                        <div class="date">
+                            2018/09/28
+                        </div>
+                        <p>育碧宣布《刺客信条：奥德赛》的四款全新手办正式发售。《刺客信条》系列最新大作《刺客信条：奥德赛》，带来了一贯的硬朗冷酷的刺客形象，本次更增添了斯巴达勇士的风采。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- content结束 -->
+    <div class="box2">
+        <div class="container-fluid">
+            <div class="row page">
+                <div class="col-md-2 col-xs-2 to_left text-center">
+                    <span class="glyphicon glyphicon-menu-left"></span>
+                </div>
+                <div class="col-md-8 col-xs-8 text-center">
+                    <a class="act" href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a class="hid" href="">6</a>
+                    <a class="hid" href="">7</a>
+                    <a class="hid" href="">8</a>
+                    <a class="hid" href="">9</a>
+                    <span><a href="">...</a></span>
+                    <a href="">149</a>
+                    <a href="">150</a>
+                </div>
+                <div class="col-md-2 col-xs-2 to_right text-center">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="btm"></div>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/js-ha/head.js"></script>
+    <script src="../js/js-lzq/news-more.js"></script>
+
+</body>
+
+</html>

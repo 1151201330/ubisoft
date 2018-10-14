@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="video" unicode="&#59007;" d="M767.986433 639.985409c0 38.403725-23.090769 63.995968-63.995968 63.995968H64.024638c-36.903659 0-63.995968-25.123281-63.995968-63.995968v-511.971842c0-41.092579 26.531193-63.995968 63.995968-63.995968h639.965827c35.810096 0 63.995968 22.122126 63.995968 63.995968v127.991937l255.985921-159.990945v575.96781l-256.7037-193.299566 0.717779 161.302606z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>育碧-注册</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .row {
+            width: 600px;
+            margin: 0 auto;
+            padding-left: 150px;
+        }
+        
+        #email,
+        #again,
+        #pwd,
+        #uname {
+            width: 400px;
+        }
+        
+        select {
+            width: 100px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        
+        .cancel {
+            display: inline-block;
+            margin-left: 200px;
+        }
+        
+        #myspan,
+        #tagain,
+        #checkpwd,
+        #checkname,
+        #checkday {
+            color: red;
+        }
+        
+        #check {
+            margin: 0;
+        }
+        
+        .box {
+            width: 15px;
+            height: 17px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row ">
+            <div class="col">
+                <img src="../images/images-lzq/uplay-logo-black.png" alt="">
+            </div>
+            <h2>创建一个 Ubisoft 账号</h2>
+            邮箱： <br>
+            <input id="email" type="text"> <br><span id="myspan"></span> <br> 确认你的邮箱地址： <br>
+            <input id="again" type="text"> <br><span id="tagain"></span> <br>密码：<br>
+            <input id="pwd" type="password" placeholder="密码长度8-16个字符之间，区分大小写"><br><span id="checkpwd"></span> <br> Ubisoft 用户名：
+            <br>
+            <input id="uname" type="text" placeholder="用户名3-15个字符之间"><br><span id="checkname"></span> <br> 生日：
+            <br>
+            <select name="" id="day">
+               <option value="日" >日</option>
+               <option value="01">01</option>
+               <option value="02">02</option>
+               <option value="03">03</option>
+               <option value="04">04</option>
+               <option value="05">05</option>
+               <option value="06">06</option>
+               <option value="07">07</option>
+               <option value="08">08</option>
+               <option value="09">09</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+               <option value="13">13</option>
+               <option value="14">14</option>
+               <option value="15">15</option>
+               <option value="16">16</option>
+               <option value="17">17</option>
+               <option value="18">18</option>
+               <option value="19">19</option>
+               <option value="20">20</option>
+               <option value="21">21</option>
+               <option value="22">22</option>
+               <option value="23">23</option>
+               <option value="24">24</option>
+               <option value="25">25</option>
+               <option value="26">26</option>
+               <option value="27">27</option>
+               <option value="28">28</option>
+               <option value="29">29</option>
+               <option value="30">30</option>
+               <option value="31">31</option>
+           </select>
+
+            <select name="" id="month">
+                <option value="月" >月</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <select name="" id="year">
+                <option value="年" >年</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+                <option value="1989">1989</option>
+                <option value="1988">1988</option>
+            </select><br>
+            <span id="checkday"></span><br>
+            <span class="box">
+                <input type="checkbox" id="check">
+            </span>我接受育碧的使用条款,销售条款和隐私政策。<br>
+            <input type="checkbox" id="check2">與指定第三方分享我的資訊。<br><br>
+
+            <input id="create" type="button" class="btn btn-primary" value="创建Ubisoft账号">
+            <span class="cancel"><a href="">取消</a></span>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/js-lzq/reg.js"></script>
+</body>
+
+</html>

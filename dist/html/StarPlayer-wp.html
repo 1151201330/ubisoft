@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>育碧星玩家</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css-wp/StarPlayer.css">
+    <link rel="stylesheet" href="../css/css-ha/head.css">
+    <link rel="stylesheet" href="../css/css-ha/common.css">
+    <link rel="stylesheet" href="../css/css-ha/foot.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="jzgd">
+    <!-- 头部 -->
+    <!-- loadblock -->
+    <div class="loadblock">
+        <img class="loadbig" src="../images/images-ha/loadbig.png" alt="">
+    </div>
+    <!-- navbar -->
+    <div class="navbar navbar-fixed-top container-fluid">
+
+        <!-- nav-left -->
+        <a class="nav-left" href="index.html">
+        </a>
+
+        <!-- nav-right -->
+        <div class="nav-right">
+            <!-- nav-right-uplay -->
+            <a href="#" class="nav-right-uplay"></a>
+            <!-- nav-right-btn -->
+            <button type="button" class="nav-right-btn btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- nav-right-search -->
+            <div class="nav-right-search">
+                <div class="search-action">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <span>搜索游戏</span>
+                </div>
+                <div class="search-show container">
+                    <input type="text" class="-active" placeholder="请输入关键字">
+                    <ul class="search-show-result"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- button-show -->
+        <div class="button-show">
+            <ul class="button-show-list">
+                <li class="active"><a href="./index.html">首页</a></li>
+                <li>
+                    <a href="#">游戏</a>
+                    <button class="game-btn glyphicon glyphicon-triangle-bottom"></button>
+                    <ul class="game-show">
+                        <li><a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">主机游戏</a></li>
+                        <li><a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">移动游戏">PC游戏</a></li>
+                        <li><a href="./MoveGame-wp.html">移动游戏">移动游戏</a></li>
+                        <li><a href="./VRgame-wp.html">VR游戏</a></li>
+                    </ul>
+                </li>
+                <li><a href="./shangchen.html">商城</a></li>
+                <li><a href="http://10.31.157.191:8080/ubisoft/src/html/special.html">支持</a></li>
+                <li><a href="#">Uplay</a></li>
+            </ul>
+        </div>
+
+        <!-- nav-list -->
+        <ul class="nav-list nav navbar-nav">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">游戏</a>
+                <button class="nav-list-drop dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
+                    </span>
+                </button>
+                <!-- dropdown-menu -->
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">主机游戏</a>
+                    </li>
+                    <li>
+                        <a href="./game.html">PC游戏</a>
+                    </li>
+                    <li>
+                        <a href="./MoveGame-wp.html">移动游戏</a>
+                    </li>
+                    <li>
+                        <a href="./VRgame-wp.html">VR游戏</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./shangchen.html"><span>STORE</span>商城</a>
+            </li>
+            <li>
+                <a href="./special.html">支持</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 个人相册和个人资料 -->
+    <div class="container-fluid2">
+        <div class="row">
+            <!-- 个人相册 -->
+            <div class="col-md-8 player-content-bg">
+                <header>
+                    <h1>个人相册</h1>
+                </header>
+                <!-- 轮播 -->
+                <div class="carousel tctd_playlist_yt">
+                    <div class="carousel_wrap-rq rq1">
+                        <img src="../images/image-wp/38.jpg" alt="">
+                        <a class="video-ico"></a>
+                    </div>
+                    <div class="carousel_wrap-rq hidden rq2">
+                        <img src="../images/image-wp/41.jpg" alt="">
+                        <a class="video-ico"></a>
+                    </div>
+                    <div class="allvideos"></div>
+                    <div class="carousel clearfix">
+                        <div class="videopic-list">
+                            <div class="subitem-1 su-1">
+                                <div class="block"></div>
+                                <a>
+                                    <img src="../images/image-wp/39.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="subitem-1 su-2">
+                                <div class="block"></div>
+                                <a>
+                                    <img src="../images/image-wp/40.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <a class="left-arrow slidecontrol">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right-arrow slidecontrol">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 最新发布 -->
+                <div class="latestArticle">
+                    <div class="ubi-title">最新发布</div>
+                    <div class="container-fluid news-bg2">
+                        <div class="col-md-4" style="height: 177.333px;">
+                            <a href="#">
+                                <img src="../images/image-wp/42.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-8 news">
+                            <h3><a href="#">全境封锁机密谋略炸翻纽约~配装分享</a></h3>
+                            <div class="news-date">2018-09-28</div>
+                            <p>全境封锁机密谋略炸翻纽约~配装分享</p>
+                        </div>
+                    </div>
+                    <div class="news-bg2">
+                        <div class="col-md-4" style="height: 177.333px;">
+                            <a href="#">
+                                <img src="../images/image-wp/43.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-8 news">
+                            <h3><a href="#">《全境封锁》PVP教学</a></h3>
+                            <div class="news-date">2018-09-28</div>
+                            <p>全境封锁小吧主教你们正确的pvp姿势~~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 个人资料 -->
+            <div class="col-md-4 player-content-right-bg">
+                <header>
+                    <h1>个人资料</h1>
+                </header>
+                <div class="player-info">
+                    <p>
+                        <span>年龄：</span> 保密
+                    </p>
+                    <p><span>性别：</span>男</p>
+                    <p><span>最喜欢的游戏：</span>全境封锁，彩虹六号围攻，孤岛惊魂系列。全境封锁是我的信仰游戏，全境封锁天下第一！</p>
+                    <p><span>代表作：</span>《全境封锁》教学视频，《全境封锁》机密谋略炸翻纽约~配装分享，《全境封锁》萌新攻略</p>
+                    <p class="platforms">
+                        <span>出没地：</span>&nbsp;
+                        <a href="https://space.bilibili.com/90578376/#/" target="_blank">B站主页</a>&nbsp;&nbsp;&nbsp;
+                        <a href="http://live.bilibili.com/3686223" target="_blank">B站直播</a>&nbsp;&nbsp;&nbsp;
+                        <a href="http://tieba.baidu.com/home/main?un=%E9%92%A2%E9%93%81vf" target="_blank">贴吧</a>&nbsp;&nbsp;
+                    </p>
+                    <p class="joindate">加入星玩家时间：2018-9-28</p>
+                </div>
+                <div class="ubi-title">其他成员</div>
+                <div class="memberlist">
+                    <div class="player clearfix">
+                        <div class="player-photo">
+                            <img src="../images/image-wp/44.jpg" alt="">
+                        </div>
+                        <div class="player-info2">
+                            <h2>
+                                <a href="#">克劳德</a>
+                                <img src="../images/image-wp/8.png" alt="">
+                            </h2>
+                            <p>
+                                <span>最喜欢的游戏：</span> 最近还在玩《彩虹6号：围攻》，有时候也玩《全境封锁》和《孤岛惊魂：野蛮纪源》，期待《荣耀战魂》
+                            </p>
+                        </div>
+                    </div>
+                    <div class="player clearfix">
+                        <div class="player-photo">
+                            <img src="../images/image-wp/45.jpg" alt="">
+                        </div>
+                        <div class="player-info2">
+                            <h2>
+                                <a href="#">尹口羊Erfolg </a>
+                                <img src="../images/image-wp/8.png" alt="">
+                            </h2>
+                            <p>
+                                <span>最喜欢的游戏：</span> 《刺客信条》真爱粉。最爱《刺客信条4：黑旗》。还喜欢《波斯王子》。最近在玩《全境封锁》，很上瘾。未来希望新的《刺客信条》厚积薄发，再创辉煌！
+                            </p>
+                        </div>
+                    </div>
+                    <div class="player clearfix">
+                        <div class="player-photo">
+                            <img src="../images/image-wp/45.png" alt=" ">
+                        </div>
+                        <div class="player-info2 ">
+                            <h2>
+                                <a href="">奈落虎</a>
+                                <img src="../images/image-wp/8.png" alt=" ">
+                            </h2>
+                            <p>
+                                <span>最喜欢的游戏：</span> 刺客信条系列，最想去的国家是意大利。最近在玩《孤岛惊魂：野蛮纪元》以及《全境封锁》。未来最想玩到的游戏是有丰富文化背景和内涵的中国风游戏。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <!-- footer -->
+    <div class="footer container-fluid">
+        <!-- wechat -->
+        <ul class="wechat">
+            <li class="wechat-block">
+                <div class="wechat-code">
+                    <img src="../images/images-ha/ubi_qr.jpg" alt="">
+                </div>
+                <a href="#">育碧中国微信公众号<img src="../images/images-ha/wechat.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#">育碧中国新浪微博<img src="../images/images-ha/weibo.png" alt=""></a>
+            </li>
+            <li class="wechat-block">
+                <div class="wechat-code">
+                    <img src="../images/images-ha/ubi_qr.jpg" alt="">
+                </div>
+                <a href="#">育碧手游微信公众号<img src="../images/images-ha/wechat.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#">育碧手游新浪微博<img src="../images/images-ha/weibo.png" alt=""></a>
+            </li>
+        </ul>
+        <!-- game -->
+        <div class="game container-fluid">
+            <h2>育碧游戏专区</h2>
+            <a href="#">*《刺客信条:奥德赛》专区</a>
+            <a href="#">*《彩虹六号:围攻》专区</a>
+            <a href="#">*《刺客信条:起源》专区</a>
+            <a href="#">*《刺客信条》系列专区</a>
+            <a href="#">*《孤岛惊魂5》专区</a>
+            <a href="#">*《酷飙车神2》专区</a>
+            <a href="#">*《全境封锁》专区</a>
+            <a href="#">*《舞力全开2017》专区</a>
+            <a href="#">*《看门狗2》专区</a>
+            <a href="#">*《孤岛惊魂:野蛮纪元》专区</a>
+            <a href="#">*《幽灵行动:荒野》专区</a>
+        </div>
+        <!-- language -->
+        <div class="language container-fluid">
+            <button class="language-btn btn-arrow white flag arrow-up">
+                <svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-guoqizhongguo"></use>
+                </svg>
+                China - Simplified Chinese
+                <i class="glyphicon glyphicon-triangle-top"></i>
+            </button>
+        </div>
+        <!-- about -->
+        <div class="about container-fluid">
+            <a href="#">关于我们</a> /
+            <a href="#">联系我们</a> /
+            <a href="#">加入我们</a>
+        </div>
+        <!-- copyright -->
+        <div class="copyright container-fluid">
+            <p>©2006-2013 Ubisoft Entertainment. All Rights Reserved. Ubisoft, ubi.com, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the U.S. and/or other countries.</p>
+            <p>上海碧汉网络科技有限公司 | 沪网文（2016）0067-067号 沪ICP备10013909号-11 | 增值电信业务经营许可证: B2-20100035</p>
+            <p><img src="../images/images-ha/gameRFID.png" alt=""></p>
+            <p><img src="../images/images-ha/beian.png">沪公网安备 31010402002141号</p>
+        </div>
+
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="../js/js-wp/StarPlayer.js "></script>
+    <script src="../js/js-ha/head.js"></script>
+    <script src="../js/js-ha/foot.js"></script>
+    <script src="../font/font-ha/font_g3wob8wmzd8/iconfont.js"></script>
+</body>
+
+</html>

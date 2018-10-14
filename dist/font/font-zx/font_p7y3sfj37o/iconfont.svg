@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="SliceCopy" unicode="&#58885;" d="M106.069333 618.666667a74.496 74.496 0 0 1 0-103.082667l355.84-366.250667a69.376 69.376 0 0 1 100.096 0l355.84 366.250667a74.325333 74.325333 0 0 1 0 103.082667 69.290667 69.290667 0 0 1-100.010666 0L512 303.786667 206.165333 618.666667a69.376 69.376 0 0 1-100.096 0z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

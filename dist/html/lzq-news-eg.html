@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>育碧新闻</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css-ha/head.css">
+    <link rel="stylesheet" href="../css/css-lzq/news-eg.css">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="jzgd">
+    <!-- head -->
+    <!-- loadblock -->
+    <div class="loadblock">
+        <img class="loadbig" src="../images/images-ha/loadbig.png" alt="">
+    </div>
+    <!-- navbar -->
+    <div class="navbar navbar-fixed-top container-fluid">
+
+        <!-- nav-left -->
+        <a class="nav-left" href="index.html">
+        </a>
+
+        <!-- nav-right -->
+        <div class="nav-right">
+            <!-- nav-right-uplay -->
+            <a href="#" class="nav-right-uplay"></a>
+            <!-- nav-right-btn -->
+            <button type="button" class="nav-right-btn btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- nav-right-search -->
+            <div class="nav-right-search">
+                <div class="search-action">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <span>搜索游戏</span>
+                </div>
+                <div class="search-show container">
+                    <input type="text" class="-active" placeholder="请输入关键字">
+                    <ul class="search-show-result"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- button-show -->
+        <div class="button-show">
+            <ul class="button-show-list">
+                <li class="active"><a href="./index.html">首页</a></li>
+                <li>
+                    <a href="#">游戏</a>
+                    <button class="game-btn glyphicon glyphicon-triangle-bottom"></button>
+                    <ul class="game-show">
+                        <li><a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">主机游戏</a></li>
+                        <li><a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">移动游戏">PC游戏</a></li>
+                        <li><a href="./MoveGame-wp.html">移动游戏">移动游戏</a></li>
+                        <li><a href="./VRgame-wp.html">VR游戏</a></li>
+                    </ul>
+                </li>
+                <li><a href="./shangchen.html">商城</a></li>
+                <li><a href="http://10.31.157.191:8080/ubisoft/src/html/special.html">支持</a></li>
+                <li><a href="#">Uplay</a></li>
+            </ul>
+        </div>
+
+        <!-- nav-list -->
+        <ul class="nav-list nav navbar-nav">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">游戏</a>
+                <button class="nav-list-drop dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
+                    </span>
+                </button>
+                <!-- dropdown-menu -->
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="http://10.31.157.191:8080/ubisoft/src/html/game.html">主机游戏</a>
+                    </li>
+                    <li>
+                        <a href="./game.html">PC游戏</a>
+                    </li>
+                    <li>
+                        <a href="./MoveGame-wp.html">移动游戏</a>
+                    </li>
+                    <li>
+                        <a href="./VRgame-wp.html">VR游戏</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./shangchen.html"><span>STORE</span>商城</a>
+            </li>
+            <li>
+                <a href="./special.html">支持</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- <div class=" top"></div> -->
+    <!-- banner -->
+    <div class="container-fluid banner">
+        <div class="circle text-center">
+            <h1>新闻</h1>
+            <h3 style="margin :15px 0">了解最新育碧最新消息</h3>
+            <!-- <i class="iconfont icon-jiantouxia"></i> -->
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </div>
+    </div>
+    <!-- banner结束 -->
+
+    <!-- 搜索栏 -->
+    <div class="container-fluid type">
+        <div class="box">
+            <div class="row position">
+                <div class="col-md-4 col col-xs-12">
+                    <button class="platform text-left"> 平台分类：
+                        <span id="all">  全部</span> 
+                        <span class="caret"></span> 
+                    </button>
+                    <div class="drop">
+                        <ul>
+                            <li><a class="active" href="#">全部</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">online</a></li>
+                            <li><a href="#">PC</a></li>
+                            <li><a href="#">Playstation4</a></li>
+                            <li><a href="#">Xbox One</a></li>
+                            <li><a href="#">Xbox 360</a></li>
+                            <li><a href="#">Playstation3</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">Playstation Vita</a></li>
+                            <li><a href="#">Wii U</a></li>
+                            <li><a href="#">Wii</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">windows phone</a></li>
+                            <li><a href="#">Virtual Reality Devices</a></li>
+                            <li><a href="#">Nintendo Switch</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col col-xs-12 gt">
+                    <button class="game text-left"> 游戏类型：
+                        <span id="all2">  全部</span> 
+                        <span class="caret"></span> 
+                        </button>
+                    <div class="drop2">
+                        <ul>
+                            <li><a class="active" href="#">全部</a></li>
+                            <li><a href="#">动作</a></li>
+                            <li><a href="#">冒险</a></li>
+                            <li><a href="#">街机</a></li>
+                            <li><a href="#">休闲</a></li>
+                            <li><a href="#">家庭</a></li>
+                            <li><a href="#">格斗</a></li>
+                            <li><a href="#">第一人称射击</a></li>
+                            <li><a href="#">经营</a></li>
+                            <li><a href="#">体感</a></li>
+                            <li><a href="#">音乐</a></li>
+                            <li><a href="#">横版</a></li>
+                            <li><a href="#">竞速</a></li>
+                            <li><a href="#">角色扮演</a></li>
+                            <li><a href="#">模拟</a></li>
+                            <li><a href="#">运动</a></li>
+                            <li><a href="#">策略</a></li>
+                            <li><a href="#">卡牌</a></li>
+                            <li><a href="#">战术射击</a></li>
+                            <li><a href="#">第三人称射击</a></li>
+                            <li><a href="#">益智</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col col-xs-12 put">
+                    <div class="row text-center ml">
+                        <div class="col-md-10 col-xs-10">
+                            <input type="search" placeholder="Keyword">
+                        </div>
+                        <div class="col-md-2 col-xs-2 ">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏结束 -->
+
+
+    <!-- content -->
+    <div class="container-fluid">
+        <div class="row bj2">
+            <div class="col-md-8 col-xs-12 news">
+                <div class="row">
+                    <div class="col-md-9 col-xs-9 title">
+                        首页&nbsp;/&nbsp; 新闻
+                    </div>
+                    <div class="col-md-3 col-xs-3 more">
+                        <a href="http://10.31.157.13:8080/project-lzq/ubisoft/src/html/lzq-news-more.html">返回</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h1 class="text-center">享受体育阖家欢！《SPORTS PARTY》10月30日登陆 NINTENDO SWITCH™</h1>
+                    <div class="date text-center">2018-09-21</div>
+                    <p>今天，育碧宣布多人体育游戏《Sports Party》将于10月30日全球登陆Nintendo Switch™ 。</p>
+                    <div class=" text-center pic">
+                        <img class=" text-center" src="../images/images-lzq/original_1537521501.jpg" alt="">
+                    </div>
+                    <p> &nbsp;</p>
+                    <p>在《Sports Party》中，至多4位本地玩家可以在6项激动人心的户外运动中挑战自己:篮球、 Frisbee®高尔夫、Jet Ski®、沙滩排球以及滑板。无论运动员们选择什么运动，如天堂般美丽的岛屿都在等待着各位！</p>
+                    <p> &nbsp;</p>
+                    <p>《Sports Party》给整个家庭来带来持续的乐趣，并通过其直观和自然的控制方式为每个人提供轻度运动的选择。玩家面临的挑战是在中Frisbee®最快速击中目标，在9个不同的高尔夫球洞击败中他们的朋友，在他们的JetSki®上赢得比赛等等。</p>
+                    <div class="text-center">
+                        <img src="../images/images-lzq/original_1537521536.jpg" alt="">
+                    </div>
+                    <p> &nbsp;</p>
+                    <p>除了激动人心的玩法之外，玩家还可以定制自己游戏角色来彰显自己的个性，肤色、发型、胡须、服装、配饰、鞋子——这里有适合每个人的东西！新的定制项目将随着玩家的游戏进度来解锁。</p>
+                    <p> &nbsp;</p>
+                    <p>游戏充分发挥了Nintendo Switch的机能特色，至多4名玩家可以在自由选择是在家中的电视上游玩或是使用带有经典控制的手持模式。</p>
+                    <p> &nbsp;</p>
+                    <p>从孩子到老人，每个人都可以在《Sports Party》中玩到停不下来！游戏拥有易上手但具有挑战性的玩法，该游戏适合所有年龄段的玩家，是享受阖家欢乐的必备之选。</p>
+                    <p> &nbsp;</p>
+                    <p>《Sports Party》将于10月30日在Nintendo Switch™ 全球发布。</p>
+                    <p> &nbsp;</p>
+                    <p>关于育碧</p>
+                    <p>育碧（Ubisoft）是研发、发行与销售互动式娱乐游戏与服务的领导企业，旗下拥有丰富多元的全球知名品牌，包括《刺客信条》、《舞力全开》、《汤姆克兰西》系列游戏、《雷曼》、《孤岛惊魂》以及《看门狗》等畅销作品。育碧开发工作室与办事处团队遍及全球各地，致力于为所有热门游戏平台，包含家用游戏主机、移动电话、平板以及个人电脑带来最纯粹、最深刻的游戏体验。育碧于2017-18财政年度内的销售额为17亿3千2百万欧元，想了解更多相关资讯，请访问：</p>
+                    <p>育碧中国官方微博：http://weibo.com/ubisoft</p>
+                    <p>育碧中文商城：http://store.ubi.com/cn </p>
+                    <p>育碧中国官方网站：http://www.ubisoft.com.cn</p>
+                    <p>育碧游戏微信：Ubisoft_China</p>
+                </div>
+
+            </div>
+
+            <!-- 侧栏，游戏推荐 -->
+            <div class="col-md-4 col-xs-12 sale">
+                <div class="bj">
+                    <h2 class="text-center">游戏推荐</h2>
+                    <div class="text-center">
+                        <img src="../images/images-lzq/thecrew2.jpg" alt="">
+                    </div>
+                    <div class="row">
+                        <h3>飙酷车神2
+                            <div class="pull-right">
+                                <span class="icon1">&nbsp;1</span>
+                                <span class="icon2">&nbsp;1</span>
+                            </div>
+                        </h3>
+                    </div>
+
+                    <p>平台:PC, Playstation4, Xbox One</p>
+                    <p>发布时间:2018年6月29日</p>
+                    <div class="row text-center url">
+                        <div class="col-md-6 col-xs-6 text-center enter">
+                            <a href=""> 进入专区</a>
+                        </div>
+                        <div class="col-md-6 col-xs-6 text-center buy">
+                            <a href="">立即购买</a>
+                        </div>
+                    </div>
+                    <div class="more-sale ">
+                        <h2 class="text-center">更多推荐</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <img src="../images/images-lzq/farcry5.jpg" alt="">
+                            <h3> 孤岛惊魂5 </h3>
+
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <img src="../images/images-lzq/aco.jpg" alt="">
+                            <h3> 刺客信条：起源</h3>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-center url">
+                            <div class="col-md-6 col-xs-6 text-center buy">
+                                <a href="">立即购买</a>
+                            </div>
+                            <div class="col-md-6 col-xs-6 text-center buy">
+                                <a href="">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center relact">相关新闻</h2>
+            </div>
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="btm"> </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/js-ha/head.js"></script>
+    <script src="../js/js-lzq/news-eg.js"></script>
+</body>
+
+</html>
